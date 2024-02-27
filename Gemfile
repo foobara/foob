@@ -15,6 +15,9 @@ gem "rake"
 
 group :development do
   gem "foobara-rubocop-rules", github: "foobara/rubocop-rules"
+  gem "foobara-empty-ruby-project-generator", github: "foobara/empty-ruby-project-generator"
+  # TODO: this should be a dependency of the above
+  gem "foobara-files-generator", github: "foobara/files-generator"
   gem "guard-rspec"
   gem "rubocop-rake"
   gem "rubocop-rspec"

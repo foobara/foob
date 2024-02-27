@@ -15,10 +15,10 @@ RSpec.describe Foobara::CommandConnectors::Foob do
   let(:output_directory) { "#{__dir__}/../tmp/fake_project_generated_from_test_suite" }
   let(:description) { "some fake project generated from the test suite." }
   let(:foob) { described_class.new }
-  let(:result) { foob.run(argv) }
+  let(:response) { foob.run(argv, exit: false) }
 
   it "can generate thing" do
-    expect(result).to eq("asdf")
+    expect(response).to eq("asdf")
 
     expect(result.keys).to include(".github/workflows/ci.yml")
     expect(result.keys).to include("lib/some_namespace/some_other_namespace/final_thingy.rb")
