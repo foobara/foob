@@ -1,3 +1,5 @@
 require "foobara/all"
+require "foobara/command_connectors"
+require "foobara/sh_cli_connector"
 
-require "foobara/foob"
+Foobara::Util.require_directory "#{__dir__}/../../src"

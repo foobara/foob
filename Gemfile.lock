@@ -6,18 +6,18 @@ GIT
     foobara (0.0.1)
 
 GIT
+  remote: https://github.com/foobara/files-generator.git
+  revision: bd13dc39ea21aab3d5ddde131f85073480cf2195
+  specs:
+    foobara-files-generator (0.1.0)
+
+GIT
   remote: https://github.com/foobara/rubocop-rules.git
   revision: ea100ea86b708a441ef66ce0861dc72237316f2a
   specs:
     foobara-rubocop-rules (0.0.1)
       rubocop
       rubocop-rspec
-
-GIT
-  remote: https://github.com/foobara/sh-cli-connector.git
-  revision: 339338b2ab53875e4066d7db4569d4445c027c06
-  specs:
-    foobara-sh-cli-connector (0.1.0)
 
 GIT
   remote: https://github.com/foobara/spec-helpers.git
@@ -30,6 +30,16 @@ GIT
   revision: b2e2e9c04d866b26c21b6e223bc359c76fcea0f8
   specs:
     foobara-util (0.1.0)
+
+PATH
+  remote: ../empty-ruby-project-generator
+  specs:
+    foobara-empty-ruby-project-generator (0.1.0)
+
+PATH
+  remote: ../sh-cli-connector
+  specs:
+    foobara-sh-cli-connector (0.1.0)
 
 PATH
   remote: .
@@ -144,6 +154,8 @@ PLATFORMS
 
 DEPENDENCIES
   foobara!
+  foobara-empty-ruby-project-generator!
+  foobara-files-generator!
   foobara-foob!
   foobara-rubocop-rules!
   foobara-sh-cli-connector!
