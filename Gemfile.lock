@@ -14,12 +14,6 @@ GIT
       rubocop-rspec
 
 GIT
-  remote: https://github.com/foobara/sh-cli-connector.git
-  revision: 339338b2ab53875e4066d7db4569d4445c027c06
-  specs:
-    foobara-sh-cli-connector (0.1.0)
-
-GIT
   remote: https://github.com/foobara/spec-helpers.git
   revision: e4ecc7b01a73b08dc12bd7422162a6afb0abec89
   specs:
@@ -30,6 +24,11 @@ GIT
   revision: b2e2e9c04d866b26c21b6e223bc359c76fcea0f8
   specs:
     foobara-util (0.1.0)
+
+PATH
+  remote: ../sh-cli-connector
+  specs:
+    foobara-sh-cli-connector (0.1.0)
 
 PATH
   remote: .
