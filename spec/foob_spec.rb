@@ -12,7 +12,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
     ]
   end
   let(:full_project_name) { "Some::Test::Project" }
-  let(:output_directory) { "#{__dir__}/../tmp/fake_project_generated_from_test_suite" }
+  let(:output_directory) { "#{__dir__}/../../fake_project_generated_from_test_suite" }
   let(:description) { "some fake project generated from the test suite." }
   let(:foob) { described_class.new }
   let(:response) { foob.run(argv, exit: false) }
