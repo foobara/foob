@@ -8,6 +8,7 @@ gem "foobara", git: "foobara", branch: "main"
 gem "foobara-util", github: "foobara/util"
 # If uncommenting the following for local development, you need to run: bundle config set local.foobara-util ../util
 # gem "foobara-util", git: "foobara-util"
+gem "foobara-sh-cli-connector", github: "foobara/sh-cli-connector"
 
 gem "rake"
 
