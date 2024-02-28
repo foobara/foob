@@ -26,13 +26,28 @@ module Foobara
         generate_command_class = nil
 
         case action
-        when "g", "generate"
+        when "generate"
           generator_key = request.argument
+
+          if generator_key.nil?
+            request.error = ParseError.new(
+              "Usage: #{program_name} generate [GENERATOR_KEY] [GENERATOR_OPTIONS]\n\n" \
+              "Available Generators: #{generator_keys_to_command_class.keys.sort.join(", ")}"
+            )
+            return
+          end
 
           generate_command_class = generator_key_to_command_class(generator_key)
 
-          request.command_class = generate_command_class
+          if generate_command_class.nil?
+            request.error = ParseError.new(
+              "Generator not found: #{generator_key}\n\n" \
+              "Available Generators: #{generator_keys_to_command_class.keys.sort.join(", ")}"
+            )
+            return
+          end
 
+          request.command_class = generate_command_class
           inputs = request.inputs
         else
           return super
