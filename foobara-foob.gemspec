@@ -21,6 +21,9 @@ Gem::Specification.new do |spec|
     "LICENSE.txt"
   ]
 
+  spec.bindir = "bin"
+  spec.executables = ["foob"]
+
   spec.require_paths = ["lib"]
   spec.metadata["rubygems_mfa_required"] = "true"
 end
