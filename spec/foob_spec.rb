@@ -17,6 +17,13 @@ RSpec.describe Foobara::CommandConnectors::Foob do
   let(:foob) { described_class.new }
   let(:response) { foob.run(argv, exit: false) }
 
+  before do
+    allow_any_instance_of(
+      Foobara::Generators::EmptyRubyProjectGenerator::WriteEmptyRubyProjectToDisk
+    ).to receive(:push_to_github).and_return(nil)
+    FileUtils.rm_rf output_directory
+  end
+
   it "can generate thing" do
     expect(response).to eq("asdf")
 
