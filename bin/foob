@@ -1,11 +1,7 @@
 #!/usr/bin/env ruby
 
-puts "FOOOOOOB!!"
+require "foobara/foob"
 
-# How to parse for generate calls?
-# generate as the "action" and "g" as the short-cut. Should look at CLI connector implementation for ideas.
+foob = Foobara::CommandConnectors::Foob.new
 
-# Make generators register themself with Foobara for use here?
-
-# Usage: foob g domain-project -f SomeOrg::SomeDomain ../some-org-some-domain
-# detect that it's g... find generator with that name, somehow use cli command connector execute it.
+foob.run(ARGV)
