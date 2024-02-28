@@ -34,6 +34,8 @@ module Foobara
           request.command_class = generate_command_class
 
           inputs = request.inputs
+        else
+          return super
         end
 
         if inputs && !inputs.empty?
