@@ -26,6 +26,9 @@ RSpec.describe Foobara::CommandConnectors::Foob do
     allow_any_instance_of(
       Foobara::Generators::EmptyRubyProjectGenerator::WriteEmptyRubyProjectToDisk
     ).to receive(:push_to_github).and_return(nil)
+    allow_any_instance_of(
+      Foobara::Generators::EmptyRubyProjectGenerator::WriteEmptyRubyProjectToDisk
+    ).to receive(:git_commit).and_return(nil)
     # rubocop:enable RSpec/AnyInstance
 
     FileUtils.rm_rf output_directory
