@@ -8,7 +8,11 @@ RSpec.describe Foobara::CommandConnectors::Foob do
       "--output_directory",
       output_directory,
       "--description",
-      description
+      description,
+      "--author_names",
+      "Somebody",
+      "--author_emails",
+      "some@email.com"
     ]
   end
   let(:full_project_name) { "Some::Test::Project" }
