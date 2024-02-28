@@ -36,7 +36,7 @@ jobs:
         env:
           cache-name: cache-foobara
         with:
-          path: ~/work/foobara-foob/foobara
+          path: ~/work/foob/foobara
           key: ${{ env.cache-name }}-${{ env.foobara_branch }}-${{ env.foobara_sha1 }}
           restore-keys: |
             ${{ env.cache-name }}-${{ env.foobara_branch }}-
@@ -67,9 +67,9 @@ jobs:
         run: |
           set -e
           mkdir -p .bundle
-          echo -e "---\nBUNDLE_LOCAL__FOOBARA: '/home/runner/work/foobara-foob/foobara'" > .bundle/config
+          echo -e "---\nBUNDLE_LOCAL__FOOBARA: '/home/runner/work/foob/foobara'" > .bundle/config
           mkdir ../../foobara
-          ln -s  ../../foobara-foob/foobara ../../foobara/foobara
+          ln -s  ../../foob/foobara ../../foobara/foobara
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
