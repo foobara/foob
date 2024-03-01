@@ -47,9 +47,14 @@ module Foobara
             return
           end
 
-          request.command_class = generate_command_class
+          transformed_command_class = transform_command_class(generate_command_class)
+          request.command_class = transformed_command_class
+
           inputs = request.inputs
         else
+          require "pry"
+          require "pry-byebug"
+          binding.pry
           return super
         end
 
