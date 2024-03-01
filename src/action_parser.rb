@@ -4,7 +4,7 @@ module Foobara
       class ActionParser < ShCliConnector::ActionParser
         def supported_actions
           # TODO: implement a shortcut feature for this stuff
-          %w[generate]
+          [*super, "generate"]
         end
 
         def normalize_action(action)
