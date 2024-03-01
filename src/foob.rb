@@ -23,7 +23,7 @@ module Foobara
       def request_to_command(request)
         action = request.action
         inputs = nil
-        generate_command_class = nil
+        transformed_command_class = nil
 
         case action
         when "generate"
@@ -47,16 +47,18 @@ module Foobara
             return
           end
 
-          request.command_class = generate_command_class
+          transformed_command_class = transform_command_class(generate_command_class)
+          request.command_class = transformed_command_class
+
           inputs = request.inputs
         else
           return super
         end
 
         if inputs && !inputs.empty?
-          generate_command_class.new(inputs)
+          transformed_command_class.new(inputs)
         else
-          generate_command_class.new
+          transformed_command_class.new
         end
       end
     end
