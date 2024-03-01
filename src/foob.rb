@@ -52,9 +52,6 @@ module Foobara
 
           inputs = request.inputs
         else
-          require "pry"
-          require "pry-byebug"
-          binding.pry
           return super
         end
 

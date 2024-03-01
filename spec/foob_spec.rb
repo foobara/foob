@@ -78,4 +78,26 @@ RSpec.describe Foobara::CommandConnectors::Foob do
       expect(response.body).to include("Missing required attribute")
     end
   end
+
+  context "when asking for help with a generator key" do
+    let(:argv) do
+      %w[help empty-ruby-project]
+    end
+
+    it "gives relevant help" do
+      expect(response.status).to be(0)
+
+      expect(response.body).to include("--output-directory")
+    end
+
+    context "when generator key is bad" do
+      let(:argv) { %w[help bad-key] }
+
+      it "gives relevant error" do
+        expect(response.status).to be(0)
+
+        expect(response.body).to include("WARNING: Unexpected argument: bad-key")
+      end
+    end
+  end
 end
