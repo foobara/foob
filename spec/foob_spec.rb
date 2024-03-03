@@ -3,8 +3,8 @@ RSpec.describe Foobara::CommandConnectors::Foob do
     [
       "g",
       "empty-ruby-project",
-      "-f",
-      full_project_name,
+      "-p",
+      project_name,
       "--output_directory",
       output_directory,
       "--description",
@@ -15,7 +15,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
       "some@email.com"
     ]
   end
-  let(:full_project_name) { "Some::Test::Project" }
+  let(:project_name) { "Some::Test::Project" }
   let(:output_directory) { "#{__dir__}/../../fake_project_generated_from_test_suite" }
   let(:description) { "some fake project generated from the test suite." }
   let(:foob) { described_class.new(program_name: "foob") }
