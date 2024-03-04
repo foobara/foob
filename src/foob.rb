@@ -1,4 +1,5 @@
 require "foobara/empty_ruby_project_generator"
+require "foobara/command_generator"
 
 module Foobara
   module CommandConnectors

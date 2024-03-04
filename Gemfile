@@ -14,6 +14,7 @@ gem "foobara-sh-cli-connector", github: "foobara/sh-cli-connector"
 gem "rake"
 
 group :development do
+  gem "foobara-command-generator", github: "foobara/command-generator"
   gem "foobara-empty-ruby-project-generator", github: "foobara/empty-ruby-project-generator"
   # gem "foobara-empty-ruby-project-generator", path: "../empty-ruby-project-generator"
   # TODO: this should be a dependency of the above
