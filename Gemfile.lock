@@ -6,8 +6,14 @@ GIT
     foobara (0.0.1)
 
 GIT
+  remote: https://github.com/foobara/command-generator.git
+  revision: 1bdec42f0e28b200ac14a5b544bf5acf90c812c2
+  specs:
+    foobara-command-generator (0.0.1)
+
+GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: b10c50ffdc0b63890d792d21504c99d4c07823c8
+  revision: 411f0b193bc289a9cb923b68982484bdf3c57026
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
@@ -136,7 +142,7 @@ GEM
       rubocop (~> 1.41)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.27.0)
+    rubocop-rspec (2.27.1)
       rubocop (~> 1.40)
       rubocop-capybara (~> 2.17)
       rubocop-factory_bot (~> 2.22)
@@ -156,6 +162,7 @@ PLATFORMS
 
 DEPENDENCIES
   foobara!
+  foobara-command-generator!
   foobara-empty-ruby-project-generator!
   foobara-files-generator!
   foobara-foob!
