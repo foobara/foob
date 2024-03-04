@@ -7,25 +7,25 @@ GIT
 
 GIT
   remote: https://github.com/foobara/command-generator.git
-  revision: 1bdec42f0e28b200ac14a5b544bf5acf90c812c2
+  revision: d030b8eae90fc6afaac5f1f7ad8eb0a0a5abad89
   specs:
     foobara-command-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: 411f0b193bc289a9cb923b68982484bdf3c57026
+  revision: 9c6667ee652db27bb166376d80b5b4b2775ff6f8
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
 GIT
   remote: https://github.com/foobara/files-generator.git
-  revision: 036cbc7c677b30b145027853f831da0df852e9f2
+  revision: 5ee0b37ee246a652d86c0239e573d7818d4c0964
   specs:
     foobara-files-generator (0.1.0)
 
 GIT
   remote: https://github.com/foobara/rubocop-rules.git
-  revision: ea100ea86b708a441ef66ce0861dc72237316f2a
+  revision: e9d8f5c45ea37810f369d1c2f46e3e386d5abb2c
   specs:
     foobara-rubocop-rules (0.0.1)
       rubocop
