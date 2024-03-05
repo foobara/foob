@@ -12,6 +12,12 @@ GIT
     foobara-command-generator (0.0.1)
 
 GIT
+  remote: https://github.com/foobara/domain-generator.git
+  revision: 7b6acd6ce9f1c9426e9daf8db7e6fdc01b7661ac
+  specs:
+    foobara-domain-generator (0.0.1)
+
+GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
   revision: 9c6667ee652db27bb166376d80b5b4b2775ff6f8
   specs:
@@ -22,6 +28,12 @@ GIT
   revision: 5ee0b37ee246a652d86c0239e573d7818d4c0964
   specs:
     foobara-files-generator (0.1.0)
+
+GIT
+  remote: https://github.com/foobara/organization-generator.git
+  revision: 20425897e76d22bce60655f4365c90b16f127698
+  specs:
+    foobara-organization-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/rubocop-rules.git
@@ -163,9 +175,11 @@ PLATFORMS
 DEPENDENCIES
   foobara!
   foobara-command-generator!
+  foobara-domain-generator!
   foobara-empty-ruby-project-generator!
   foobara-files-generator!
   foobara-foob!
+  foobara-organization-generator!
   foobara-rubocop-rules!
   foobara-sh-cli-connector!
   foobara-spec-helpers!
