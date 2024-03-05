@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/command-generator.git
-  revision: d030b8eae90fc6afaac5f1f7ad8eb0a0a5abad89
+  revision: c6fc74904e2efb0e2c2d8335905202b34018737c
   specs:
     foobara-command-generator (0.0.1)
 
@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: 9c6667ee652db27bb166376d80b5b4b2775ff6f8
+  revision: ba6168de44e9e08b111ecc42b913fb2f54114fb6
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
