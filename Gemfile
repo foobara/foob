@@ -15,10 +15,12 @@ gem "rake"
 
 group :development do
   gem "foobara-command-generator", github: "foobara/command-generator"
+  gem "foobara-domain-generator", github: "foobara/domain-generator"
   gem "foobara-empty-ruby-project-generator", github: "foobara/empty-ruby-project-generator"
   # gem "foobara-empty-ruby-project-generator", path: "../empty-ruby-project-generator"
   # TODO: this should be a dependency of the above
   gem "foobara-files-generator", github: "foobara/files-generator"
+  gem "foobara-organization-generator", github: "foobara/organization-generator"
   gem "foobara-rubocop-rules", github: "foobara/rubocop-rules"
   gem "guard-rspec"
   gem "rubocop-rake"
