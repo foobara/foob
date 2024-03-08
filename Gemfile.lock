@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/files-generator.git
-  revision: 5ee0b37ee246a652d86c0239e573d7818d4c0964
+  revision: e8a64096028045d3a5b754e3f997619729e8ed98
   specs:
     foobara-files-generator (0.1.0)
 
@@ -37,19 +37,19 @@ GIT
 
 GIT
   remote: https://github.com/foobara/rack-connector-generator.git
-  revision: e82199bf2f66a30dfddf2be6d541f71ed4710a73
+  revision: c2fa3b0ca1c8cb39f019f618a35712e8e3b528bc
   specs:
     foobara-rack-connector-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/resque-connector-generator.git
-  revision: d5aabb9d3fdafcdf356befe2ba166d6cf1fb13ff
+  revision: d9c4c52a9cb9acfa4beabe1b7a5f40de9b6557e8
   specs:
     foobara-resque-connector-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/resque-scheduler-connector-generator.git
-  revision: c86a3f6db6c52f42cd09320d024aed0475ac9dac
+  revision: 4e82324e95e7d0174276a3b3eac0947ce4ba6527
   specs:
     foobara-resque-scheduler-connector-generator (0.0.1)
 
@@ -63,7 +63,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/sh-cli-connector-generator.git
-  revision: 4b61ffad4e6688d7ae659b009818b74cfc8e6516
+  revision: 7c1419ad458cc13ef2e983837a9eb9b6d0dcba37
   specs:
     foobara-sh-cli-connector-generator (0.0.1)
 
@@ -165,7 +165,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
-    rubocop (1.61.0)
+    rubocop (1.62.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -173,7 +173,7 @@ GEM
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.30.0, < 2.0)
+      rubocop-ast (>= 1.31.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.31.1)
