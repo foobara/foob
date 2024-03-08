@@ -2,6 +2,11 @@ require "foobara/empty_ruby_project_generator"
 require "foobara/command_generator"
 require "foobara/domain_generator"
 require "foobara/organization_generator"
+require "foobara/type_generator"
+require "foobara/sh_cli_connector_generator"
+require "foobara/rack_connector_generator"
+require "foobara/resque_connector_generator"
+require "foobara/resque_scheduler_connector_generator"
 
 module Foobara
   module CommandConnectors
