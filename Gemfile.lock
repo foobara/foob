@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: ba6168de44e9e08b111ecc42b913fb2f54114fb6
+  revision: ccdd9c8b1db0f7c7f3b0ad6ebbf4f476240cb59b
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
