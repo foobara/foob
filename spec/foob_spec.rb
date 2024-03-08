@@ -2,7 +2,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
   let(:argv) do
     [
       "g",
-      "empty-ruby-project",
+      "ruby-project",
       "-p",
       project_name,
       "--output_directory",
@@ -77,7 +77,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
   end
 
   context "when generator key is correct but not arguments" do
-    let(:argv) { %w[generate empty-ruby-project] }
+    let(:argv) { %w[generate ruby-project] }
 
     it "gives relevant error" do
       expect(response.status).to_not be(0)
@@ -88,7 +88,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
 
   context "when asking for help with a generator key" do
     let(:argv) do
-      %w[help empty-ruby-project]
+      %w[help ruby-project]
     end
 
     it "gives relevant help" do
