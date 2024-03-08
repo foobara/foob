@@ -1,6 +1,6 @@
 GIT
   remote: foobara
-  revision: ec078ef1126bf4528242b2c8c242c78ef93ab566
+  revision: bed98da02523603da9278202fc01c01b4c24f00f
   branch: main
   specs:
     foobara (0.0.1)
@@ -36,12 +36,36 @@ GIT
     foobara-organization-generator (0.0.1)
 
 GIT
+  remote: https://github.com/foobara/rack-connector-generator.git
+  revision: e82199bf2f66a30dfddf2be6d541f71ed4710a73
+  specs:
+    foobara-rack-connector-generator (0.0.1)
+
+GIT
+  remote: https://github.com/foobara/resque-connector-generator.git
+  revision: d5aabb9d3fdafcdf356befe2ba166d6cf1fb13ff
+  specs:
+    foobara-resque-connector-generator (0.0.1)
+
+GIT
+  remote: https://github.com/foobara/resque-scheduler-connector-generator.git
+  revision: c86a3f6db6c52f42cd09320d024aed0475ac9dac
+  specs:
+    foobara-resque-scheduler-connector-generator (0.0.1)
+
+GIT
   remote: https://github.com/foobara/rubocop-rules.git
   revision: e9d8f5c45ea37810f369d1c2f46e3e386d5abb2c
   specs:
     foobara-rubocop-rules (0.0.1)
       rubocop
       rubocop-rspec
+
+GIT
+  remote: https://github.com/foobara/sh-cli-connector-generator.git
+  revision: 4b61ffad4e6688d7ae659b009818b74cfc8e6516
+  specs:
+    foobara-sh-cli-connector-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/sh-cli-connector.git
@@ -54,6 +78,12 @@ GIT
   revision: e4ecc7b01a73b08dc12bd7422162a6afb0abec89
   specs:
     foobara-spec-helpers (0.1.0)
+
+GIT
+  remote: https://github.com/foobara/type-generator.git
+  revision: d0c7942366a181f65db1b946976e757a12172b0a
+  specs:
+    foobara-type-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/util.git
@@ -180,9 +210,14 @@ DEPENDENCIES
   foobara-files-generator!
   foobara-foob!
   foobara-organization-generator!
+  foobara-rack-connector-generator!
+  foobara-resque-connector-generator!
+  foobara-resque-scheduler-connector-generator!
   foobara-rubocop-rules!
   foobara-sh-cli-connector!
+  foobara-sh-cli-connector-generator!
   foobara-spec-helpers!
+  foobara-type-generator!
   foobara-util!
   guard-rspec
   pry

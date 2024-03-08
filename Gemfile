@@ -21,7 +21,12 @@ group :development do
   # TODO: this should be a dependency of the above
   gem "foobara-files-generator", github: "foobara/files-generator"
   gem "foobara-organization-generator", github: "foobara/organization-generator"
+  gem "foobara-rack-connector-generator", github: "foobara/rack-connector-generator"
+  gem "foobara-resque-connector-generator", github: "foobara/resque-connector-generator"
+  gem "foobara-resque-scheduler-connector-generator", github: "foobara/resque-scheduler-connector-generator"
   gem "foobara-rubocop-rules", github: "foobara/rubocop-rules"
+  gem "foobara-sh-cli-connector-generator", github: "foobara/sh-cli-connector-generator"
+  gem "foobara-type-generator", github: "foobara/type-generator"
   gem "guard-rspec"
   gem "rubocop-rake"
   gem "rubocop-rspec"
