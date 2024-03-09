@@ -5,6 +5,7 @@ require "foobara/organization_generator"
 require "foobara/type_generator"
 require "foobara/sh_cli_connector_generator"
 require "foobara/rack_connector_generator"
+require "foobara/redis_crud_driver_generator"
 require "foobara/resque_connector_generator"
 require "foobara/resque_scheduler_connector_generator"
 

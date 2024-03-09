@@ -42,6 +42,12 @@ GIT
     foobara-rack-connector-generator (0.0.1)
 
 GIT
+  remote: https://github.com/foobara/redis-crud-driver-generator.git
+  revision: f364c8b29a125be979e76fcb864e745067424d9f
+  specs:
+    foobara-redis-crud-driver-generator (0.0.1)
+
+GIT
   remote: https://github.com/foobara/resque-connector-generator.git
   revision: d9c4c52a9cb9acfa4beabe1b7a5f40de9b6557e8
   specs:
@@ -211,6 +217,7 @@ DEPENDENCIES
   foobara-foob!
   foobara-organization-generator!
   foobara-rack-connector-generator!
+  foobara-redis-crud-driver-generator!
   foobara-resque-connector-generator!
   foobara-resque-scheduler-connector-generator!
   foobara-rubocop-rules!
