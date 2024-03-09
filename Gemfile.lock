@@ -13,13 +13,13 @@ GIT
 
 GIT
   remote: https://github.com/foobara/domain-generator.git
-  revision: 7b6acd6ce9f1c9426e9daf8db7e6fdc01b7661ac
+  revision: 2c323c43b266e703c4df6a3a47543ef824ac5f40
   specs:
     foobara-domain-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: ccdd9c8b1db0f7c7f3b0ad6ebbf4f476240cb59b
+  revision: 1ce3ae37baa8fe29812bcb04accfb12bf18bad1a
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
@@ -176,7 +176,7 @@ GEM
       rubocop-ast (>= 1.31.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.31.1)
+    rubocop-ast (1.31.2)
       parser (>= 3.3.0.4)
     rubocop-capybara (2.20.0)
       rubocop (~> 1.41)
