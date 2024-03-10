@@ -7,31 +7,31 @@ GIT
 
 GIT
   remote: https://github.com/foobara/command-generator.git
-  revision: c6fc74904e2efb0e2c2d8335905202b34018737c
+  revision: ac094ca4ee241fa494599e5abd79136b7b37b342
   specs:
     foobara-command-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/domain-generator.git
-  revision: 2c323c43b266e703c4df6a3a47543ef824ac5f40
+  revision: 0af58418a0e6b189debbcc82c9a984862ae1d30a
   specs:
     foobara-domain-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: 1ce3ae37baa8fe29812bcb04accfb12bf18bad1a
+  revision: adad3b196ca3441ebcb5d8b2d36bd8cc851e2688
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
 GIT
   remote: https://github.com/foobara/files-generator.git
-  revision: e8a64096028045d3a5b754e3f997619729e8ed98
+  revision: d28448337abb3381fa88e6683d0ce3d559743389
   specs:
     foobara-files-generator (0.1.0)
 
 GIT
   remote: https://github.com/foobara/organization-generator.git
-  revision: 20425897e76d22bce60655f4365c90b16f127698
+  revision: 75b03383087382b89b1bdc9856b3c91a5ae392f9
   specs:
     foobara-organization-generator (0.0.1)
 
@@ -49,13 +49,13 @@ GIT
 
 GIT
   remote: https://github.com/foobara/resque-connector-generator.git
-  revision: d9c4c52a9cb9acfa4beabe1b7a5f40de9b6557e8
+  revision: ddc7734c318509bf934757785e7c04046ba3732c
   specs:
     foobara-resque-connector-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/resque-scheduler-connector-generator.git
-  revision: 4e82324e95e7d0174276a3b3eac0947ce4ba6527
+  revision: ed3a832e57b51d234ef994a1447c586c6bc61dbb
   specs:
     foobara-resque-scheduler-connector-generator (0.0.1)
 
@@ -69,7 +69,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/sh-cli-connector-generator.git
-  revision: 7c1419ad458cc13ef2e983837a9eb9b6d0dcba37
+  revision: b91a5fdad2061893d6cb56e35a4d3bd338990ec0
   specs:
     foobara-sh-cli-connector-generator (0.0.1)
 
@@ -87,7 +87,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/type-generator.git
-  revision: d0c7942366a181f65db1b946976e757a12172b0a
+  revision: 9d5eae43f73a13a39d765bffee3c6b7535a58c40
   specs:
     foobara-type-generator (0.0.1)
 
