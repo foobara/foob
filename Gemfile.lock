@@ -7,55 +7,55 @@ GIT
 
 GIT
   remote: https://github.com/foobara/command-generator.git
-  revision: f9e2bb66b03c590981a9eafa0b9f96f993eed10a
+  revision: c8e1fb7fc5ac414081c45bea9efe2dd5cec65aba
   specs:
     foobara-command-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/domain-generator.git
-  revision: 0af58418a0e6b189debbcc82c9a984862ae1d30a
+  revision: b37cb6393e653cd00226edf8a480fb70f83420b4
   specs:
     foobara-domain-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: ed07b95cd847584a18636dfe4fe3bbed40b074c4
+  revision: 3dba9c75b78bc251d69f9c4f68b2671cd869f3fc
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
 GIT
   remote: https://github.com/foobara/files-generator.git
-  revision: a19a353c050fd802a53f1781c7c4d108a41a1544
+  revision: 8e9439014484892bb49a1d720399d924f853baea
   specs:
     foobara-files-generator (0.1.0)
 
 GIT
   remote: https://github.com/foobara/organization-generator.git
-  revision: 75b03383087382b89b1bdc9856b3c91a5ae392f9
+  revision: aecbc0f6312466a92e70c2363cc8d72d2703c893
   specs:
     foobara-organization-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/rack-connector-generator.git
-  revision: c2fa3b0ca1c8cb39f019f618a35712e8e3b528bc
+  revision: 3fa09bff00f9610ffcc8ea2e7ed9a121bce644ac
   specs:
     foobara-rack-connector-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/redis-crud-driver-generator.git
-  revision: 896a5d57994a315316ec1e798238251612ebd065
+  revision: 209156dbeab26f69ff33d5882ea9a371039e67c6
   specs:
     foobara-redis-crud-driver-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/resque-connector-generator.git
-  revision: 55fb6addd6215d6cd125efc2af94a9c543ad0253
+  revision: 1f51513585d218ebd265420134a891eb649c0285
   specs:
     foobara-resque-connector-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/resque-scheduler-connector-generator.git
-  revision: ed3a832e57b51d234ef994a1447c586c6bc61dbb
+  revision: a4906738be90d271d3ce8f61db9a7dd379aa2e50
   specs:
     foobara-resque-scheduler-connector-generator (0.0.1)
 
@@ -69,7 +69,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/sh-cli-connector-generator.git
-  revision: b91a5fdad2061893d6cb56e35a4d3bd338990ec0
+  revision: 60cae750f628fb636f549236249db00ac888519f
   specs:
     foobara-sh-cli-connector-generator (0.0.1)
 
@@ -87,7 +87,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/type-generator.git
-  revision: 9d5eae43f73a13a39d765bffee3c6b7535a58c40
+  revision: d45bb5a3248e0122e28b60386838fb02f92b8f2c
   specs:
     foobara-type-generator (0.0.1)
 
@@ -171,7 +171,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
-    rubocop (1.62.0)
+    rubocop (1.62.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)

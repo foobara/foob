@@ -20,6 +20,7 @@ group :development do
   # gem "foobara-empty-ruby-project-generator", path: "../empty-ruby-project-generator"
   # TODO: this should be a dependency of the above
   gem "foobara-files-generator", github: "foobara/files-generator"
+  # gem "foobara-files-generator", path: "../files-generator"
   gem "foobara-organization-generator", github: "foobara/organization-generator"
   gem "foobara-rack-connector-generator", github: "foobara/rack-connector-generator"
   gem "foobara-redis-crud-driver-generator", github: "foobara/redis-crud-driver-generator"
