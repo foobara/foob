@@ -1,13 +1,13 @@
 GIT
   remote: foobara
-  revision: bed98da02523603da9278202fc01c01b4c24f00f
+  revision: f97443e06569b022bae15c2b8c1b0c136fc3edf0
   branch: main
   specs:
     foobara (0.0.1)
 
 GIT
   remote: https://github.com/foobara/command-generator.git
-  revision: ac094ca4ee241fa494599e5abd79136b7b37b342
+  revision: f9e2bb66b03c590981a9eafa0b9f96f993eed10a
   specs:
     foobara-command-generator (0.0.1)
 
@@ -19,13 +19,13 @@ GIT
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: adad3b196ca3441ebcb5d8b2d36bd8cc851e2688
+  revision: ed07b95cd847584a18636dfe4fe3bbed40b074c4
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
 GIT
   remote: https://github.com/foobara/files-generator.git
-  revision: d28448337abb3381fa88e6683d0ce3d559743389
+  revision: a19a353c050fd802a53f1781c7c4d108a41a1544
   specs:
     foobara-files-generator (0.1.0)
 
@@ -43,13 +43,13 @@ GIT
 
 GIT
   remote: https://github.com/foobara/redis-crud-driver-generator.git
-  revision: f364c8b29a125be979e76fcb864e745067424d9f
+  revision: 896a5d57994a315316ec1e798238251612ebd065
   specs:
     foobara-redis-crud-driver-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/resque-connector-generator.git
-  revision: ddc7734c318509bf934757785e7c04046ba3732c
+  revision: 55fb6addd6215d6cd125efc2af94a9c543ad0253
   specs:
     foobara-resque-connector-generator (0.0.1)
 
