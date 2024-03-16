@@ -29,6 +29,7 @@ group :development do
   gem "foobara-rubocop-rules", github: "foobara/rubocop-rules"
   gem "foobara-sh-cli-connector-generator", github: "foobara/sh-cli-connector-generator"
   gem "foobara-type-generator", github: "foobara/type-generator"
+  gem "foobara-typescript-react-command-form-generator", github: "foobara/typescript-react-command-form-generator"
   gem "foobara-typescript-remote-command-generator", github: "foobara/typescript-remote-command-generator"
   gem "guard-rspec"
   gem "rubocop-rake"
