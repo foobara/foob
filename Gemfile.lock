@@ -19,13 +19,13 @@ GIT
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: 73d34d651481bc64639b56f471c7d689d0334894
+  revision: 53257f218a1730042aacb86bf5ccba616163d035
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
 GIT
   remote: https://github.com/foobara/files-generator.git
-  revision: b450ff1d27bc1570f448c95dcd4a5adf71224aca
+  revision: aac85a7084ed26bcf783305415a17759090378fe
   specs:
     foobara-files-generator (0.1.0)
 
@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/rack-connector-generator.git
-  revision: 84b6ebda4c5481bdfc0e9d63db72433e1ccc4fbd
+  revision: fa39cb574257dd3adfbfc20b064d33c8af876d55
   specs:
     foobara-rack-connector-generator (0.0.1)
 
@@ -69,7 +69,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/sh-cli-connector-generator.git
-  revision: c889f8ef38fe4ab85ac672fcd8dc321118c41d33
+  revision: d2871e3246b643ac54ff9b3a13c1941e2c21b4f9
   specs:
     foobara-sh-cli-connector-generator (0.0.1)
 
@@ -93,13 +93,13 @@ GIT
 
 GIT
   remote: https://github.com/foobara/typescript-react-command-form-generator.git
-  revision: 4dba0bea296ed211e816cf0e23cca9c2f4aa3ff6
+  revision: 99714d813b8ed0b5b756408fde90bbff1fa947ac
   specs:
     foobara-typescript-react-command-form-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/typescript-remote-command-generator.git
-  revision: 0be09c438b7f11818205d015b501b2cf9e590829
+  revision: e50c4cd84368103c7e5d62fce210f3489ffb30c7
   specs:
     foobara-typescript-remote-command-generator (0.0.1)
 
