@@ -9,6 +9,7 @@ require "foobara/redis_crud_driver_generator"
 require "foobara/resque_connector_generator"
 require "foobara/resque_scheduler_connector_generator"
 require "foobara/typescript_remote_command_generator"
+require "foobara/typescript_react_command_form_generator"
 
 module Foobara
   module CommandConnectors

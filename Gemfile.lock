@@ -1,6 +1,6 @@
 GIT
   remote: foobara
-  revision: d805289417ebfac955e16f89568f7fd1f8961a29
+  revision: 9d507ed411aca4dcc747c0f61501c9b14cde3b13
   branch: main
   specs:
     foobara (0.0.1)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/files-generator.git
-  revision: 8e9439014484892bb49a1d720399d924f853baea
+  revision: b450ff1d27bc1570f448c95dcd4a5adf71224aca
   specs:
     foobara-files-generator (0.1.0)
 
@@ -69,7 +69,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/sh-cli-connector-generator.git
-  revision: 3d1b9485e8210c83a1096ff96563c6508be0e525
+  revision: c889f8ef38fe4ab85ac672fcd8dc321118c41d33
   specs:
     foobara-sh-cli-connector-generator (0.0.1)
 
@@ -92,8 +92,14 @@ GIT
     foobara-type-generator (0.0.1)
 
 GIT
+  remote: https://github.com/foobara/typescript-react-command-form-generator.git
+  revision: 4dba0bea296ed211e816cf0e23cca9c2f4aa3ff6
+  specs:
+    foobara-typescript-react-command-form-generator (0.0.1)
+
+GIT
   remote: https://github.com/foobara/typescript-remote-command-generator.git
-  revision: a8fcd62389dedbff2411937a8822b6b7f86cc9dc
+  revision: 0be09c438b7f11818205d015b501b2cf9e590829
   specs:
     foobara-typescript-remote-command-generator (0.0.1)
 
@@ -231,6 +237,7 @@ DEPENDENCIES
   foobara-sh-cli-connector-generator!
   foobara-spec-helpers!
   foobara-type-generator!
+  foobara-typescript-react-command-form-generator!
   foobara-typescript-remote-command-generator!
   foobara-util!
   guard-rspec
