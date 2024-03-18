@@ -18,6 +18,8 @@ group :development do
   gem "foobara-domain-generator", github: "foobara/domain-generator"
   gem "foobara-empty-ruby-project-generator", github: "foobara/empty-ruby-project-generator"
   # gem "foobara-empty-ruby-project-generator", path: "../empty-ruby-project-generator"
+  gem "foobara-empty-typescript-react-project-generator", github: "foobara/empty-typescript-react-project-generator"
+  # gem "foobara-empty-typescript-react-project-generator", path: "../empty-typescript-react-project-generator"
   # TODO: this should be a dependency of the above
   gem "foobara-files-generator", github: "foobara/files-generator"
   # gem "foobara-files-generator", path: "../files-generator"
