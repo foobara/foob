@@ -24,8 +24,14 @@ GIT
     foobara-empty-ruby-project-generator (0.1.0)
 
 GIT
+  remote: https://github.com/foobara/empty-typescript-react-project-generator.git
+  revision: f472e1a407696bd99b5ec6ebd5cbf18955c059a0
+  specs:
+    foobara-empty-typescript-react-project-generator (0.0.1)
+
+GIT
   remote: https://github.com/foobara/files-generator.git
-  revision: aac85a7084ed26bcf783305415a17759090378fe
+  revision: 9c9c49a095adde08985cef2e8a5ff8037ad1ead9
   specs:
     foobara-files-generator (0.1.0)
 
@@ -225,6 +231,7 @@ DEPENDENCIES
   foobara-command-generator!
   foobara-domain-generator!
   foobara-empty-ruby-project-generator!
+  foobara-empty-typescript-react-project-generator!
   foobara-files-generator!
   foobara-foob!
   foobara-organization-generator!

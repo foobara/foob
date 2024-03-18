@@ -1,4 +1,5 @@
 require "foobara/empty_ruby_project_generator"
+require "foobara/empty_typescript_react_project_generator"
 require "foobara/command_generator"
 require "foobara/domain_generator"
 require "foobara/organization_generator"
