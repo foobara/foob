@@ -14,6 +14,7 @@ gem "foobara-sh-cli-connector", github: "foobara/sh-cli-connector"
 gem "rake"
 
 group :development do
+  gem "foobara-autocrud-generator", github: "foobara/autocrud-generator"
   gem "foobara-command-generator", github: "foobara/command-generator"
   gem "foobara-domain-generator", github: "foobara/domain-generator"
   gem "foobara-empty-ruby-project-generator", github: "foobara/empty-ruby-project-generator"

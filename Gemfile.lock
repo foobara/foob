@@ -1,13 +1,19 @@
 GIT
   remote: foobara
-  revision: 9d507ed411aca4dcc747c0f61501c9b14cde3b13
+  revision: 3848e3889ff83241f838efcd8e2fd2d02efc8e42
   branch: main
   specs:
     foobara (0.0.1)
 
 GIT
+  remote: https://github.com/foobara/autocrud-generator.git
+  revision: 48da9b1951076f578d5b6aa729537d997f31a25d
+  specs:
+    foobara-autocrud-generator (0.0.1)
+
+GIT
   remote: https://github.com/foobara/command-generator.git
-  revision: f73542334d199591f55d24132685633c83d15d9d
+  revision: 393714abc3a3f9f29b4e90180da5b21b161fddd5
   specs:
     foobara-command-generator (0.0.1)
 
@@ -19,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: 53257f218a1730042aacb86bf5ccba616163d035
+  revision: 564c9ea66c4a130264215e1de606c8dd5d3a9c67
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
@@ -49,7 +55,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/redis-crud-driver-generator.git
-  revision: a8d155a9c411e21293bf518aa2186509837b8afd
+  revision: d12a1ca163a6048285717c831d355b3fb0d518bc
   specs:
     foobara-redis-crud-driver-generator (0.0.1)
 
@@ -93,7 +99,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/type-generator.git
-  revision: f8a3f749b2e13acb18e8c2c22b97316122ad8b1a
+  revision: e9418cbd59b7f42b070f742dcdc3a0fa5b01c6c2
   specs:
     foobara-type-generator (0.0.1)
 
@@ -228,6 +234,7 @@ PLATFORMS
 
 DEPENDENCIES
   foobara!
+  foobara-autocrud-generator!
   foobara-command-generator!
   foobara-domain-generator!
   foobara-empty-ruby-project-generator!
