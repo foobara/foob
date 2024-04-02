@@ -1,31 +1,31 @@
 GIT
   remote: foobara
-  revision: 3848e3889ff83241f838efcd8e2fd2d02efc8e42
+  revision: 6075e6a95ad43bfacc5df446b6a68cb3115db5fe
   branch: main
   specs:
     foobara (0.0.1)
 
 GIT
   remote: https://github.com/foobara/autocrud-generator.git
-  revision: 48da9b1951076f578d5b6aa729537d997f31a25d
+  revision: aed3894dd4d48f06f5d25b9b08ffd4b2907d9cf4
   specs:
     foobara-autocrud-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/command-generator.git
-  revision: 393714abc3a3f9f29b4e90180da5b21b161fddd5
+  revision: b5aaf39f10cd39c48a017cc224fd8594bfa676f1
   specs:
     foobara-command-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/domain-generator.git
-  revision: 3b6ae15870d616d09663af9d82f8a6c12f8af8b4
+  revision: fb20b2d893315a6fe723875a1d27b3ba3c91306f
   specs:
     foobara-domain-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: 564c9ea66c4a130264215e1de606c8dd5d3a9c67
+  revision: 2eaed58aab2e9ff0a5e8f8c3e9e699bff5276a78
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
@@ -43,37 +43,37 @@ GIT
 
 GIT
   remote: https://github.com/foobara/organization-generator.git
-  revision: 1014db59d39074f0d6499fbcb12e67288ee7b4d3
+  revision: fc4403fc099dc0dfd454ebfcb75b73f2757db6c4
   specs:
     foobara-organization-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/rack-connector-generator.git
-  revision: fa39cb574257dd3adfbfc20b064d33c8af876d55
+  revision: 3bd22f6e26a4d4d0db449011a98b50962e55c061
   specs:
     foobara-rack-connector-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/redis-crud-driver-generator.git
-  revision: d12a1ca163a6048285717c831d355b3fb0d518bc
+  revision: be1ee436472d745bed87cf54fc430bd97c4f777e
   specs:
     foobara-redis-crud-driver-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/resque-connector-generator.git
-  revision: 322df3b1cd7517ca849dc7a5aad1ce638fbdf95a
+  revision: 1dcb1d2b4ae2360d0b43ee49285455cd6a536c7c
   specs:
     foobara-resque-connector-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/resque-scheduler-connector-generator.git
-  revision: 13012f0efc454ce3ca31d2d1d5ad5f76b989d057
+  revision: 84cedcb9be7851a6fce3e0035ca031fd20c7fac3
   specs:
     foobara-resque-scheduler-connector-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/rubocop-rules.git
-  revision: e9d8f5c45ea37810f369d1c2f46e3e386d5abb2c
+  revision: 14fed1e360c95f20531aee72f95d7ce27e8cc9a2
   specs:
     foobara-rubocop-rules (0.0.1)
       rubocop
@@ -87,7 +87,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/sh-cli-connector.git
-  revision: 78ff61ace804add30060043b663f48e5fc39fa3f
+  revision: 36e164ac2c9c8874c033c355ec43168fd48f9b7a
   specs:
     foobara-sh-cli-connector (0.1.0)
 
@@ -117,7 +117,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/util.git
-  revision: b2e2e9c04d866b26c21b6e223bc359c76fcea0f8
+  revision: ebf430ec00a389ec11e7f8e233131b1b36a1b6f1
   specs:
     foobara-util (0.1.0)
 
@@ -214,10 +214,13 @@ GEM
       rubocop (~> 1.41)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.27.1)
+    rubocop-rspec (2.28.0)
       rubocop (~> 1.40)
       rubocop-capybara (~> 2.17)
       rubocop-factory_bot (~> 2.22)
+      rubocop-rspec_rails (~> 2.28)
+    rubocop-rspec_rails (2.28.2)
+      rubocop (~> 1.40)
     ruby-progressbar (1.13.0)
     shellany (0.0.1)
     simplecov (0.22.0)
