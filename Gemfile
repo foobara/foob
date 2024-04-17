@@ -27,6 +27,7 @@ group :development do
   gem "foobara-organization-generator", github: "foobara/organization-generator"
   gem "foobara-rack-connector-generator", github: "foobara/rack-connector-generator"
   gem "foobara-redis-crud-driver-generator", github: "foobara/redis-crud-driver-generator"
+  gem "foobara-remote-imports-generator", github: "foobara/remote-imports-generator"
   gem "foobara-resque-connector-generator", github: "foobara/resque-connector-generator"
   gem "foobara-resque-scheduler-connector-generator", github: "foobara/resque-scheduler-connector-generator"
   gem "foobara-rubocop-rules", github: "foobara/rubocop-rules"
