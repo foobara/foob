@@ -1,6 +1,6 @@
 GIT
   remote: foobara
-  revision: 6272335abdf7911fa93accd5279d273ebea74d43
+  revision: 4321c4c70abf92d4d690ae086e0b3c5df4499c9b
   branch: main
   specs:
     foobara (0.0.1)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: 2eaed58aab2e9ff0a5e8f8c3e9e699bff5276a78
+  revision: 8ab60c61cc7083a86d039e1e7472ea48599911d6
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
@@ -61,7 +61,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/remote-imports-generator.git
-  revision: d9f6e248980f5d3f24593e92d5c9587ae36a1d5e
+  revision: 50095f8635de54d194ad5b28f563123b0c7a30f2
   specs:
     foobara-remote-imports-generator (0.0.1)
 
@@ -123,7 +123,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/util.git
-  revision: 659d4e4fd5dd74ca005650fc4bcc2ac1ee7809ec
+  revision: 3773dcb765bc70dea2b14cfe179ed3849d5126c2
   specs:
     foobara-util (0.1.0)
 
@@ -201,7 +201,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
-    rubocop (1.63.2)
+    rubocop (1.63.3)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
