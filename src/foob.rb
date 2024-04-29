@@ -67,8 +67,11 @@ module Foobara
 
           inputs = request.inputs
         when "console"
+          # Not going to bother creating a command for this one
           # :nocov:
-          exec("./bin/console")
+          Bundler.with_unbundled_env do
+            exec("./bin/console")
+          end
           # :nocov:
         else
           return super
