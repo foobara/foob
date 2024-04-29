@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/domain-mapper-generator.git
-  revision: 23dd618b07a8650afc2c9604f6b31076fe6bc076
+  revision: b2268940c74524a310370a143085284d362c1356
   specs:
     foobara-domain-mapper-generator (0.0.1)
 
