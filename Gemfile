@@ -17,6 +17,7 @@ group :development do
   gem "foobara-autocrud-generator", github: "foobara/autocrud-generator"
   gem "foobara-command-generator", github: "foobara/command-generator"
   gem "foobara-domain-generator", github: "foobara/domain-generator"
+  gem "foobara-domain-mapper-generator", github: "foobara/domain-mapper-generator"
   gem "foobara-empty-ruby-project-generator", github: "foobara/empty-ruby-project-generator"
   # gem "foobara-empty-ruby-project-generator", path: "../empty-ruby-project-generator"
   gem "foobara-empty-typescript-react-project-generator", github: "foobara/empty-typescript-react-project-generator"
