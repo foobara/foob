@@ -4,11 +4,16 @@ module Foobara
       class ActionParser < ShCliConnector::ActionParser
         def supported_actions
           # TODO: implement a shortcut feature for this stuff
-          [*super, "generate"]
+          [*super, "generate", "console"]
         end
 
         def normalize_action(action)
-          if action == "g"
+          case action
+          when "c"
+            # :nocov:
+            "console"
+            # :nocov:
+          when "g"
             "generate"
           else
             super

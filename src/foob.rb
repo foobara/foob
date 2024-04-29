@@ -65,6 +65,10 @@ module Foobara
           request.command_class = transformed_command_class
 
           inputs = request.inputs
+        when "console"
+          # :nocov:
+          exec("./bin/console")
+          # :nocov:
         else
           return super
         end
