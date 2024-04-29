@@ -1,6 +1,6 @@
 GIT
   remote: foobara
-  revision: 4321c4c70abf92d4d690ae086e0b3c5df4499c9b
+  revision: 8feaaa8a474fedad9f4c65774a2218a5b47f1c2e
   branch: main
   specs:
     foobara (0.0.1)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: 8ab60c61cc7083a86d039e1e7472ea48599911d6
+  revision: 2b2bde0c0f90867e07f826d251e95f116de9b2df
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
@@ -43,7 +43,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/organization-generator.git
-  revision: fc4403fc099dc0dfd454ebfcb75b73f2757db6c4
+  revision: 5798ec745753f8774fa5fca5120583c6e6aec25e
   specs:
     foobara-organization-generator (0.0.1)
 
@@ -61,7 +61,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/remote-imports-generator.git
-  revision: 50095f8635de54d194ad5b28f563123b0c7a30f2
+  revision: fb5c8861cc153ba4337edb98ad3b8a9d31fa9e20
   specs:
     foobara-remote-imports-generator (0.0.1)
 
@@ -93,7 +93,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/sh-cli-connector.git
-  revision: 4d7b47b9fe038983b1a999fb415509eb4e3511c2
+  revision: caf838a83c38501ca8d6e1181f103c2bbabd3fd3
   specs:
     foobara-sh-cli-connector (0.1.0)
 
@@ -123,7 +123,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/util.git
-  revision: 3773dcb765bc70dea2b14cfe179ed3849d5126c2
+  revision: 7459f1000de349ca3ba56122dc66c1a81dcf6c4e
   specs:
     foobara-util (0.1.0)
 
@@ -168,7 +168,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     parallel (1.24.0)
-    parser (3.3.0.5)
+    parser (3.3.1.0)
       ast (~> 2.4.1)
       racc
     pry (0.14.2)
@@ -201,7 +201,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
-    rubocop (1.63.3)
+    rubocop (1.63.4)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -212,8 +212,8 @@ GEM
       rubocop-ast (>= 1.31.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.31.2)
-      parser (>= 3.3.0.4)
+    rubocop-ast (1.31.3)
+      parser (>= 3.3.1.0)
     rubocop-capybara (2.20.0)
       rubocop (~> 1.41)
     rubocop-factory_bot (2.25.1)
