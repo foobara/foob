@@ -24,6 +24,12 @@ GIT
     foobara-domain-generator (0.0.1)
 
 GIT
+  remote: https://github.com/foobara/domain-mapper-generator.git
+  revision: 23dd618b07a8650afc2c9604f6b31076fe6bc076
+  specs:
+    foobara-domain-mapper-generator (0.0.1)
+
+GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
   revision: 2b2bde0c0f90867e07f826d251e95f116de9b2df
   specs:
@@ -246,6 +252,7 @@ DEPENDENCIES
   foobara-autocrud-generator!
   foobara-command-generator!
   foobara-domain-generator!
+  foobara-domain-mapper-generator!
   foobara-empty-ruby-project-generator!
   foobara-empty-typescript-react-project-generator!
   foobara-files-generator!
