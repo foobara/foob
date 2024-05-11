@@ -1,13 +1,13 @@
 GIT
   remote: foobara
-  revision: 8feaaa8a474fedad9f4c65774a2218a5b47f1c2e
+  revision: c6b9a9b53f754ef24abf9297911016a23134fd27
   branch: main
   specs:
     foobara (0.0.1)
 
 GIT
   remote: https://github.com/foobara/autocrud-generator.git
-  revision: aed3894dd4d48f06f5d25b9b08ffd4b2907d9cf4
+  revision: aca96d4427fa656bfd813edb34709ed728d14f69
   specs:
     foobara-autocrud-generator (0.0.1)
 
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: 2b2bde0c0f90867e07f826d251e95f116de9b2df
+  revision: 093536fc83c6b7191e05f536a63f46bbce8feaa3
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
@@ -73,13 +73,13 @@ GIT
 
 GIT
   remote: https://github.com/foobara/resque-connector-generator.git
-  revision: 1dcb1d2b4ae2360d0b43ee49285455cd6a536c7c
+  revision: 74464085a9e26ddefd8dc1aefb00cc9f8a5e2b9d
   specs:
     foobara-resque-connector-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/resque-scheduler-connector-generator.git
-  revision: 84cedcb9be7851a6fce3e0035ca031fd20c7fac3
+  revision: 85e37b3522640779e27a031019841858ee679f81
   specs:
     foobara-resque-scheduler-connector-generator (0.0.1)
 
@@ -99,7 +99,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/sh-cli-connector.git
-  revision: caf838a83c38501ca8d6e1181f103c2bbabd3fd3
+  revision: 5d7c54a1cac8b500bb7e7b052f0e7c4d2672dc35
   specs:
     foobara-sh-cli-connector (0.1.0)
 
@@ -111,19 +111,19 @@ GIT
 
 GIT
   remote: https://github.com/foobara/type-generator.git
-  revision: e9418cbd59b7f42b070f742dcdc3a0fa5b01c6c2
+  revision: 37b520440040f59349c07f7a18aad81612948c24
   specs:
     foobara-type-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/typescript-react-command-form-generator.git
-  revision: 99714d813b8ed0b5b756408fde90bbff1fa947ac
+  revision: 66c926c2bd6da8998767688443c49e620f84fdf3
   specs:
     foobara-typescript-react-command-form-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/typescript-remote-command-generator.git
-  revision: e50c4cd84368103c7e5d62fce210f3489ffb30c7
+  revision: a63f2022cf3848e7fd603e386d80a63b81a06917
   specs:
     foobara-typescript-remote-command-generator (0.0.1)
 
@@ -189,7 +189,7 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    regexp_parser (2.9.0)
+    regexp_parser (2.9.1)
     rexml (3.2.6)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -207,7 +207,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
-    rubocop (1.63.4)
+    rubocop (1.63.5)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -226,7 +226,7 @@ GEM
       rubocop (~> 1.41)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.29.1)
+    rubocop-rspec (2.29.2)
       rubocop (~> 1.40)
       rubocop-capybara (~> 2.17)
       rubocop-factory_bot (~> 2.22)
