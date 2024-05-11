@@ -70,7 +70,7 @@ module Foobara
           # Not going to bother creating a command for this one
           # :nocov:
           Bundler.with_unbundled_env do
-            exec("./bin/console")
+            exec({ "IRB_PROMPT_PREFIX" => "foob" }, "./bin/console")
           end
           # :nocov:
         else
