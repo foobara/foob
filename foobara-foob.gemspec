@@ -1,7 +1,7 @@
 require_relative "src/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "foobara-foob"
+  spec.name = "foob"
   spec.version = Foobara::Foob::VERSION
   spec.authors = ["Miles Georgi"]
   spec.email = ["azimux@gmail.com"]
@@ -23,11 +23,15 @@ Gem::Specification.new do |spec|
     "bin/foob",
     "lib/**/*",
     "src/**/*",
-    "LICENSE.txt"
+    "LICENSE*.txt",
+    "README.md",
+    "CHANGELOG.md"
   ]
 
   spec.bindir = "bin"
   spec.executables = ["foob"]
+
+  spec.add_dependency "foobara"
 
   spec.require_paths = ["lib"]
   spec.metadata["rubygems_mfa_required"] = "true"
