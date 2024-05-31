@@ -47,4 +47,5 @@ at https://github.com/[USERNAME]/foobara-empty_ruby_project_generator.
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+foobara-foob is licensed under your choice of the Apache License 2.0 or the MIT license.
+See [LICENSE.txt](LICENSE-MIT.txt) for more info about licensing.

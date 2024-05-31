@@ -8,7 +8,11 @@ Gem::Specification.new do |spec|
 
   spec.summary = "foob: cli interface for code generators and whatnot for Foobara projects"
   spec.homepage = "https://github.com/foobara/foob"
-  spec.license = "MIT"
+
+  # Equivalent to SPDX License Expression: Apache-2.0 OR MIT
+  spec.license = "Apache-2.0 OR MIT"
+  spec.licenses = ["Apache-2.0", "MIT"]
+
   spec.required_ruby_version = ">= 3.2.2"
 
   spec.metadata["homepage_uri"] = spec.homepage
