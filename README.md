@@ -47,5 +47,5 @@ at https://github.com/[USERNAME]/foobara-empty_ruby_project_generator.
 
 ## License
 
-foobara-foob is licensed under your choice of the Apache License 2.0 or the MIT license.
+foob is licensed under your choice of the Apache License 2.0 or the MIT license.
 See [LICENSE.txt](LICENSE-MIT.txt) for more info about licensing.

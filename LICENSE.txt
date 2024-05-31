@@ -1,4 +1,4 @@
-foobara-foob is dual licensed under your choice of the Apache-2.0 license and the MIT license.
+foob is dual licensed under your choice of the Apache-2.0 license and the MIT license.
 
 Apache-2.0 License: LICENSE-APACHE.txt or https://www.apache.org/licenses/LICENSE-2.0.txt
 MIT License: LICENSE-MIT.txt or https://opensource.org/licenses/MIT
