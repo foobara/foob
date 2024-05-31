@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: a1cf34efa4b9055f6526ae90453eb825cb6c8ccc
+  revision: a08f1ccbd62ab9b10c77b6dbe737257535df7256
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
       foobara
@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/files-generator.git
-  revision: f3f1912d2efa6befe9138326e082b1074a5bf308
+  revision: 13507d8f1c8870b9234d34a869b039cca6de0aa0
   specs:
     foobara-files-generator (0.1.0)
       foobara
@@ -152,7 +152,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     lumberjack (1.2.10)
-    method_source (1.0.0)
+    method_source (1.1.0)
     nenv (0.3.0)
     notiffany (0.1.3)
       nenv (~> 0.1)
@@ -169,9 +169,9 @@ GEM
       pry (>= 0.13, < 0.15)
     racc (1.8.0)
     rainbow (3.1.1)
-    rake (13.1.0)
+    rake (13.2.1)
     rb-fsevent (0.11.2)
-    rb-inotify (0.10.1)
+    rb-inotify (0.11.1)
       ffi (~> 1.0)
     regexp_parser (2.9.2)
     rexml (3.2.8)
@@ -188,7 +188,7 @@ GEM
     rspec-its (1.3.0)
       rspec-core (>= 3.0.0)
       rspec-expectations (>= 3.0.0)
-    rspec-mocks (3.13.0)
+    rspec-mocks (3.13.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
@@ -227,7 +227,7 @@ GEM
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
     strscan (3.1.0)
-    thor (1.3.0)
+    thor (1.3.1)
     unicode-display_width (2.5.0)
 
 PLATFORMS
