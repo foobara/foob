@@ -1,3 +1,7 @@
+## [0.0.3] - 2024-06-18
+
+- Fix bug preventing foob from loading
+
 ## [0.0.2] - 2024-06-17
 
 - Add foobara gem dependencies
