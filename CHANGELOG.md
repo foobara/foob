@@ -1,3 +1,8 @@
+## [0.0.2] - 2024-06-17
+
+- Add foobara gem dependencies
+- Fix bug preventing running executable as installed gem
+
 ## [0.0.1] - 2024-05-31
 
 * Soft-launch for demos
