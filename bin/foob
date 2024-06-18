@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
 
 # TODO: maybe just check for presence of ./Gemfile??
-if ENV["LOCAL_FOOB"] == "true"
-  ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
-
-  require "bundler/setup"
-  require "foobara/foob"
+if File.exist?("../Gemfile")
+  #  ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
 end
+
+require "bundler/setup"
+require "foobara/foob"
 
 foob = Foobara::CommandConnectors::Foob.new
 
