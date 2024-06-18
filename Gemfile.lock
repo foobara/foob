@@ -1,118 +1,25 @@
-GIT
-  remote: https://github.com/foobara/autocrud-generator.git
-  revision: aca96d4427fa656bfd813edb34709ed728d14f69
-  specs:
-    foobara-autocrud-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/command-generator.git
-  revision: b5aaf39f10cd39c48a017cc224fd8594bfa676f1
-  specs:
-    foobara-command-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/domain-generator.git
-  revision: fb20b2d893315a6fe723875a1d27b3ba3c91306f
-  specs:
-    foobara-domain-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/domain-mapper-generator.git
-  revision: b2268940c74524a310370a143085284d362c1356
-  specs:
-    foobara-domain-mapper-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: a08f1ccbd62ab9b10c77b6dbe737257535df7256
-  specs:
-    foobara-empty-ruby-project-generator (0.1.0)
-      foobara
-
-GIT
-  remote: https://github.com/foobara/empty-typescript-react-project-generator.git
-  revision: f472e1a407696bd99b5ec6ebd5cbf18955c059a0
-  specs:
-    foobara-empty-typescript-react-project-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/files-generator.git
-  revision: 13507d8f1c8870b9234d34a869b039cca6de0aa0
-  specs:
-    foobara-files-generator (0.1.0)
-      foobara
-
-GIT
-  remote: https://github.com/foobara/organization-generator.git
-  revision: 5798ec745753f8774fa5fca5120583c6e6aec25e
-  specs:
-    foobara-organization-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/rack-connector-generator.git
-  revision: 3bd22f6e26a4d4d0db449011a98b50962e55c061
-  specs:
-    foobara-rack-connector-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/redis-crud-driver-generator.git
-  revision: be1ee436472d745bed87cf54fc430bd97c4f777e
-  specs:
-    foobara-redis-crud-driver-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/remote-imports-generator.git
-  revision: fb5c8861cc153ba4337edb98ad3b8a9d31fa9e20
-  specs:
-    foobara-remote-imports-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/resque-connector-generator.git
-  revision: 74464085a9e26ddefd8dc1aefb00cc9f8a5e2b9d
-  specs:
-    foobara-resque-connector-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/resque-scheduler-connector-generator.git
-  revision: 85e37b3522640779e27a031019841858ee679f81
-  specs:
-    foobara-resque-scheduler-connector-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/sh-cli-connector-generator.git
-  revision: d2871e3246b643ac54ff9b3a13c1941e2c21b4f9
-  specs:
-    foobara-sh-cli-connector-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/sh-cli-connector.git
-  revision: 5d7c54a1cac8b500bb7e7b052f0e7c4d2672dc35
-  specs:
-    foobara-sh-cli-connector (0.1.0)
-
-GIT
-  remote: https://github.com/foobara/type-generator.git
-  revision: 37b520440040f59349c07f7a18aad81612948c24
-  specs:
-    foobara-type-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/typescript-react-command-form-generator.git
-  revision: 66c926c2bd6da8998767688443c49e620f84fdf3
-  specs:
-    foobara-typescript-react-command-form-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/typescript-remote-command-generator.git
-  revision: a63f2022cf3848e7fd603e386d80a63b81a06917
-  specs:
-    foobara-typescript-remote-command-generator (0.0.1)
-
 PATH
   remote: .
   specs:
     foob (0.0.1)
       foobara
+      foobara-autocrud-generator
+      foobara-command-generator
+      foobara-domain-generator
+      foobara-domain-mapper-generator
+      foobara-empty-ruby-project-generator
+      foobara-empty-typescript-react-project-generator
+      foobara-organization-generator
+      foobara-rack-connector-generator
+      foobara-redis-crud-driver-generator
+      foobara-remote-imports-generator
+      foobara-resque-connector-generator
+      foobara-resque-scheduler-connector-generator
+      foobara-sh-cli-connector
+      foobara-sh-cli-connector-generator
+      foobara-type-generator
+      foobara-typescript-react-command-form-generator
+      foobara-typescript-remote-command-generator
 
 GEM
   remote: https://rubygems.org/
@@ -122,14 +29,67 @@ GEM
     coderay (1.1.3)
     diff-lcs (1.5.1)
     docile (1.4.0)
-    ffi (1.16.3)
+    ffi (1.17.0-x86_64-linux-gnu)
     foobara (0.0.1)
       foobara-util
-    foobara-rubocop-rules (0.0.2)
+    foobara-autocrud-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-command-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-domain-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-domain-mapper-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-empty-ruby-project-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-empty-typescript-react-project-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-files-generator (0.0.1)
+      foobara
+    foobara-organization-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-rack-connector-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-redis-crud-driver-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-remote-imports-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-resque-connector-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-resque-scheduler-connector-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-rubocop-rules (0.0.3)
       rubocop
       rubocop-rspec
+    foobara-sh-cli-connector (0.0.1)
+      foobara
+    foobara-sh-cli-connector-generator (0.0.1)
+      foobara
+      foobara-files-generator
     foobara-spec-helpers (0.0.3)
       foobara-util
+    foobara-type-generator (0.0.1)
+      foobara
+      foobara-files-generator
+    foobara-typescript-react-command-form-generator (0.0.1)
+      foobara
+      foobara-files-generator
+      foobara-typescript-remote-command-generator
+    foobara-typescript-remote-command-generator (0.0.1)
+      foobara
+      foobara-files-generator
     foobara-util (0.0.4)
     formatador (1.1.0)
     guard (2.18.1)
@@ -157,8 +117,8 @@ GEM
     notiffany (0.1.3)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    parallel (1.24.0)
-    parser (3.3.2.0)
+    parallel (1.25.1)
+    parser (3.3.3.0)
       ast (~> 2.4.1)
       racc
     pry (0.14.2)
@@ -174,15 +134,15 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     regexp_parser (2.9.2)
-    rexml (3.2.8)
-      strscan (>= 3.0.9)
+    rexml (3.3.0)
+      strscan
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
       rspec-mocks (~> 3.13.0)
     rspec-core (3.13.0)
       rspec-support (~> 3.13.0)
-    rspec-expectations (3.13.0)
+    rspec-expectations (3.13.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-its (1.3.0)
@@ -205,19 +165,10 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.31.3)
       parser (>= 3.3.1.0)
-    rubocop-capybara (2.20.0)
-      rubocop (~> 1.41)
-    rubocop-factory_bot (2.25.1)
-      rubocop (~> 1.41)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.29.2)
-      rubocop (~> 1.40)
-      rubocop-capybara (~> 2.17)
-      rubocop-factory_bot (~> 2.22)
-      rubocop-rspec_rails (~> 2.28)
-    rubocop-rspec_rails (2.28.3)
-      rubocop (~> 1.40)
+    rubocop-rspec (3.0.1)
+      rubocop (~> 1.61)
     ruby-progressbar (1.13.0)
     shellany (0.0.1)
     simplecov (0.22.0)
@@ -235,26 +186,8 @@ PLATFORMS
 
 DEPENDENCIES
   foob!
-  foobara-autocrud-generator!
-  foobara-command-generator!
-  foobara-domain-generator!
-  foobara-domain-mapper-generator!
-  foobara-empty-ruby-project-generator!
-  foobara-empty-typescript-react-project-generator!
-  foobara-files-generator!
-  foobara-organization-generator!
-  foobara-rack-connector-generator!
-  foobara-redis-crud-driver-generator!
-  foobara-remote-imports-generator!
-  foobara-resque-connector-generator!
-  foobara-resque-scheduler-connector-generator!
   foobara-rubocop-rules
-  foobara-sh-cli-connector!
-  foobara-sh-cli-connector-generator!
   foobara-spec-helpers
-  foobara-type-generator!
-  foobara-typescript-react-command-form-generator!
-  foobara-typescript-remote-command-generator!
   guard-rspec
   pry
   pry-byebug
