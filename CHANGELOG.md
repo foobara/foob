@@ -1,3 +1,7 @@
+## [unreleased 0.0.4] - 2024-06-18
+
+- Add --version
+
 ## [0.0.3] - 2024-06-18
 
 - Fix bug preventing foob from loading

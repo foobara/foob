@@ -41,6 +41,9 @@ module Foobara
         transformed_command_class = nil
 
         case action
+        when "version"
+          transformed_command_class = Commands::Version
+          request.command_class = transformed_command_class
         when "generate"
           generator_key = request.argument
 
