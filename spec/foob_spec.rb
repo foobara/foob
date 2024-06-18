@@ -107,4 +107,22 @@ RSpec.describe Foobara::CommandConnectors::Foob do
       end
     end
   end
+
+  context "when asking for the version of foob" do
+    let(:argv) { %w[--version] }
+
+    it "gives version number" do
+      expect(response.status).to be(0)
+      expect(response.body).to eq(Foobara::Foob::VERSION)
+    end
+
+    context "with short option" do
+      let(:argv) { %w[v] }
+
+      it "gives version number" do
+        expect(response.status).to be(0)
+        expect(response.body).to eq(Foobara::Foob::VERSION)
+      end
+    end
+  end
 end

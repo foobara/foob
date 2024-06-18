@@ -18,7 +18,7 @@ module Foobara
           end
 
           def known_actions
-            [*super, "generate"]
+            [*super, "generate", "version", "console"]
           end
         end
       end
