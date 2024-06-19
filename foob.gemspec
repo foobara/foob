@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
     "bin/foob",
     "lib/**/*",
     "src/**/*",
+    "version.rb",
     "LICENSE*.txt",
     "README.md",
     "CHANGELOG.md"

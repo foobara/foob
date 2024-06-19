@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foob (0.0.4)
+    foob (0.0.5)
       foobara
       foobara-autocrud-generator
       foobara-command-generator
