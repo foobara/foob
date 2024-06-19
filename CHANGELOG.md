@@ -1,6 +1,7 @@
-## [unreleased 0.0.4] - 2024-06-18
+## [0.0.4] - 2024-06-19
 
 - Add --version
+- Don't assume Bundle is loaded
 
 ## [0.0.3] - 2024-06-18
 

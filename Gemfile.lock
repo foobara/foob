@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foob (0.0.3)
+    foob (0.0.4)
       foobara
       foobara-autocrud-generator
       foobara-command-generator
@@ -44,7 +44,7 @@ GEM
     foobara-domain-mapper-generator (0.0.1)
       foobara
       foobara-files-generator
-    foobara-empty-ruby-project-generator (0.0.1)
+    foobara-empty-ruby-project-generator (0.0.2)
       foobara
       foobara-files-generator
     foobara-empty-typescript-react-project-generator (0.0.1)

@@ -72,8 +72,12 @@ module Foobara
         when "console"
           # Not going to bother creating a command for this one
           # :nocov:
-          Bundler.with_unbundled_env do
-            exec({ "IRB_PROMPT_PREFIX" => "foob" }, "./bin/console")
+          run_console = -> { exec({ "IRB_PROMPT_PREFIX" => "foob" }, "./bin/console") }
+
+          if Bundler.respond_to?(:with_unbundled_env)
+            Bundler.with_unbundled_env(&run_console)
+          else
+            run_console.call
           end
           # :nocov:
         else
