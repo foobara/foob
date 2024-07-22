@@ -1,3 +1,7 @@
+## [0.0.6] - 2024-07-21
+
+- Fix bug preventing global use of foob executable
+
 ## [0.0.5] - 2024-06-19
 
 - Add --version

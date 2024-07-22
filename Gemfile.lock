@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foob (0.0.5)
+    foob (0.0.6)
       foobara
       foobara-autocrud-generator
       foobara-command-generator
@@ -30,24 +30,24 @@ GEM
     diff-lcs (1.5.1)
     docile (1.4.0)
     ffi (1.17.0-x86_64-linux-gnu)
-    foobara (0.0.1)
+    foobara (0.0.2)
       foobara-util
     foobara-autocrud-generator (0.0.1)
       foobara
       foobara-files-generator
-    foobara-command-generator (0.0.1)
+    foobara-command-generator (0.0.2)
       foobara
       foobara-files-generator
-    foobara-domain-generator (0.0.1)
+    foobara-domain-generator (0.0.2)
       foobara
       foobara-files-generator
-    foobara-domain-mapper-generator (0.0.1)
+    foobara-domain-mapper-generator (0.0.2)
       foobara
       foobara-files-generator
-    foobara-empty-ruby-project-generator (0.0.2)
+    foobara-empty-ruby-project-generator (0.0.5)
       foobara
       foobara-files-generator
-    foobara-empty-typescript-react-project-generator (0.0.1)
+    foobara-empty-typescript-react-project-generator (0.0.3)
       foobara
       foobara-files-generator
     foobara-files-generator (0.0.1)
@@ -55,13 +55,13 @@ GEM
     foobara-organization-generator (0.0.1)
       foobara
       foobara-files-generator
-    foobara-rack-connector-generator (0.0.1)
+    foobara-rack-connector-generator (0.0.6)
       foobara
       foobara-files-generator
     foobara-redis-crud-driver-generator (0.0.1)
       foobara
       foobara-files-generator
-    foobara-remote-imports-generator (0.0.1)
+    foobara-remote-imports-generator (0.0.2)
       foobara
       foobara-files-generator
     foobara-resque-connector-generator (0.0.1)
@@ -83,7 +83,7 @@ GEM
     foobara-type-generator (0.0.1)
       foobara
       foobara-files-generator
-    foobara-typescript-react-command-form-generator (0.0.1)
+    foobara-typescript-react-command-form-generator (0.0.2)
       foobara
       foobara-files-generator
       foobara-typescript-remote-command-generator
@@ -118,7 +118,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     parallel (1.25.1)
-    parser (3.3.3.0)
+    parser (3.3.4.0)
       ast (~> 2.4.1)
       racc
     pry (0.14.2)
@@ -134,7 +134,7 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     regexp_parser (2.9.2)
-    rexml (3.3.0)
+    rexml (3.3.2)
       strscan
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -152,13 +152,13 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
-    rubocop (1.64.1)
+    rubocop (1.65.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 1.8, < 3.0)
+      regexp_parser (>= 2.4, < 3.0)
       rexml (>= 3.2.5, < 4.0)
       rubocop-ast (>= 1.31.1, < 2.0)
       ruby-progressbar (~> 1.7)
@@ -167,7 +167,7 @@ GEM
       parser (>= 3.3.1.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (3.0.1)
+    rubocop-rspec (3.0.3)
       rubocop (~> 1.61)
     ruby-progressbar (1.13.0)
     shellany (0.0.1)
