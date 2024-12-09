@@ -38,6 +38,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
     FileUtils.rm_rf output_directory
   end
 
+  # TODO: capture bundle stuff with vcr or stub bundle if too much data
   it "can generate thing" do
     expect(response.status).to be(0)
 

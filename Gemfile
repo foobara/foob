@@ -4,6 +4,7 @@ ruby File.read("#{__dir__}/.ruby-version")
 gemspec
 
 # gem "foobara-util", path: "../util"
+# gem "foobara", path: "../foobara"
 # gem "foobara-sh-cli-connector", path: "../sh-cli-connector"
 
 gem "rake"

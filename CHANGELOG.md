@@ -1,3 +1,7 @@
+## [0.0.7] - 2024-12-09
+
+- Fix bug where we look in the wrong place to detect if we are being ran as a gem
+
 ## [0.0.6] - 2024-07-21
 
 - Fix bug preventing global use of foob executable
