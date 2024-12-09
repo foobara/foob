@@ -45,7 +45,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "foobara-remote-imports-generator"
   spec.add_dependency "foobara-resque-connector-generator"
   spec.add_dependency "foobara-resque-scheduler-connector-generator"
-  spec.add_dependency "foobara-sh-cli-connector"
+  spec.add_dependency "foobara-sh-cli-connector", "~> 0.0.10"
   spec.add_dependency "foobara-sh-cli-connector-generator"
   spec.add_dependency "foobara-type-generator"
   spec.add_dependency "foobara-typescript-react-command-form-generator"
