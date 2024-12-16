@@ -39,6 +39,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "foobara-domain-mapper-generator"
   spec.add_dependency "foobara-empty-ruby-project-generator"
   spec.add_dependency "foobara-empty-typescript-react-project-generator"
+  spec.add_dependency "foobara-local-files-crud-driver-generator"
   spec.add_dependency "foobara-organization-generator"
   spec.add_dependency "foobara-rack-connector-generator"
   spec.add_dependency "foobara-redis-crud-driver-generator"

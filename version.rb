@@ -1,5 +1,5 @@
 module Foobara
   module Foob
-    VERSION = "0.0.7".freeze
+    VERSION = "0.0.9".freeze
   end
 end
