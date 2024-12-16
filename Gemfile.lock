@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foob (0.0.7)
+    foob (0.0.9)
       foobara
       foobara-autocrud-generator
       foobara-command-generator
@@ -9,6 +9,7 @@ PATH
       foobara-domain-mapper-generator
       foobara-empty-ruby-project-generator
       foobara-empty-typescript-react-project-generator
+      foobara-local-files-crud-driver-generator
       foobara-organization-generator
       foobara-rack-connector-generator
       foobara-redis-crud-driver-generator
@@ -33,7 +34,7 @@ GEM
       foobara
       foobara-sh-cli-connector
     ffi (1.17.0-x86_64-linux-gnu)
-    foobara (0.0.31)
+    foobara (0.0.38)
       foobara-util
     foobara-autocrud-generator (0.0.1)
       foobara
@@ -56,6 +57,9 @@ GEM
       foobara-files-generator
     foobara-files-generator (0.0.3)
       foobara
+    foobara-local-files-crud-driver-generator (0.0.1)
+      foobara
+      foobara-files-generator
     foobara-organization-generator (0.0.1)
       foobara
       foobara-files-generator
@@ -154,7 +158,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.2)
-    rubocop (1.69.1)
+    rubocop (1.69.2)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -164,11 +168,11 @@ GEM
       rubocop-ast (>= 1.36.2, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.36.2)
+    rubocop-ast (1.37.0)
       parser (>= 3.3.1.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (3.2.0)
+    rubocop-rspec (3.3.0)
       rubocop (~> 1.61)
     ruby-progressbar (1.13.0)
     shellany (0.0.1)

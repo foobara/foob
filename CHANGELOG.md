@@ -1,3 +1,7 @@
+## [0.0.9] - 2024-12-16
+
+- Add local-files-crud-driver-generator
+
 ## [0.0.7] - 2024-12-09
 
 - Fix bug where we look in the wrong place to detect if we are being ran as a gem
