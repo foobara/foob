@@ -1,3 +1,7 @@
+## [0.0.11] - 2025-01-03
+
+- Bump Ruby to 3.4.1
+
 ## [0.0.9] - 2024-12-16
 
 - Add local-files-crud-driver-generator
