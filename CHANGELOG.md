@@ -1,3 +1,9 @@
+## [0.0.12] - 2025-03-08
+
+- Bump Ruby to 3.4.2
+- Remove an unused generator
+- Eliminate IRB warning
+
 ## [0.0.11] - 2025-01-03
 
 - Bump Ruby to 3.4.1
