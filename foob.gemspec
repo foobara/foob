@@ -37,7 +37,6 @@ Gem::Specification.new do |spec|
   spec.executables = ["foob"]
 
   spec.add_dependency "foobara"
-  spec.add_dependency "foobara-autocrud-generator"
   spec.add_dependency "foobara-command-generator"
   spec.add_dependency "foobara-domain-generator"
   spec.add_dependency "foobara-domain-mapper-generator"
