@@ -1,3 +1,5 @@
+# TODO: we should just opt into these and they should be discoverable by Foob
+# or registered upon it as-needed.
 require "foobara/empty_ruby_project_generator"
 require "foobara/empty_typescript_react_project_generator"
 require "foobara/command_generator"
@@ -6,6 +8,7 @@ require "foobara/domain_mapper_generator"
 require "foobara/organization_generator"
 require "foobara/type_generator"
 require "foobara/sh_cli_connector_generator"
+require "foobara/mcp_connector_generator"
 require "foobara/rack_connector_generator"
 require "foobara/local_files_crud_driver_generator"
 require "foobara/redis_crud_driver_generator"
@@ -48,9 +51,12 @@ module Foobara
           generator_key = request.argument
 
           if generator_key.nil?
+            generator_keys = generator_keys_to_command_class.keys.sort.map { |s| "  #{s}" }
+            generator_keys = generator_keys.join("\n")
+
             request.error = ParseError.new(
               "Usage: #{program_name} generate [GENERATOR_KEY] [GENERATOR_OPTIONS]\n\n" \
-              "Available Generators: #{generator_keys_to_command_class.keys.sort.join(", ")}"
+              "Available Generators:\n\n#{generator_keys}"
             )
             return
           end

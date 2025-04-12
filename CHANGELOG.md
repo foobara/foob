@@ -1,3 +1,7 @@
+## [0.0.13] - 2025-04-11
+
+- Add mcp-connector generator and improve available generator output
+
 ## [0.0.12] - 2025-03-08
 
 - Bump Ruby to 3.4.2
