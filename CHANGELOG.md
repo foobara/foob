@@ -1,3 +1,7 @@
+## [unreleased] -
+
+- Add ruby minimum version to gemspec/Gemfile
+
 ## [0.0.14] - 2025-05-03
 
 - Deal with CommandConnector interface changes
