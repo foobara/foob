@@ -38,15 +38,12 @@ module Foobara
         end
       end
 
-      def request_to_command(request)
+      def request_to_command_class(request)
         action = request.action
-        inputs = nil
-        transformed_command_class = nil
 
         case action
         when "version"
-          transformed_command_class = Commands::Version
-          request.command_class = transformed_command_class
+          Commands::Version
         when "generate"
           generator_key = request.argument
 
@@ -55,8 +52,8 @@ module Foobara
             generator_keys = generator_keys.join("\n")
 
             request.error = ParseError.new(
-              "Usage: #{program_name} generate [GENERATOR_KEY] [GENERATOR_OPTIONS]\n\n" \
-              "Available Generators:\n\n#{generator_keys}"
+              message: "Usage: #{program_name} generate [GENERATOR_KEY] [GENERATOR_OPTIONS]\n\n" \
+                       "Available Generators:\n\n#{generator_keys}"
             )
             return
           end
@@ -65,16 +62,13 @@ module Foobara
 
           if generate_command_class.nil?
             request.error = ParseError.new(
-              "Generator not found: #{generator_key}\n\n" \
-              "Available Generators: #{generator_keys_to_command_class.keys.sort.join(", ")}"
+              message: "Generator not found: #{generator_key}\n\n" \
+                       "Available Generators: #{generator_keys_to_command_class.keys.sort.join(", ")}"
             )
             return
           end
 
-          transformed_command_class = transform_command_class(generate_command_class)
-          request.command_class = transformed_command_class
-
-          inputs = request.inputs
+          transform_command_class(generate_command_class)
         when "console"
           # Not going to bother creating a command for this one
           # :nocov:
@@ -87,13 +81,15 @@ module Foobara
           end
           # :nocov:
         else
-          return super
+          super
         end
+      end
 
-        if inputs && !inputs.empty?
-          transformed_command_class.new(inputs)
+      def request_to_command_inputs(request)
+        if %w[generate version].include?(request.action)
+          request.inputs
         else
-          transformed_command_class.new
+          super
         end
       end
     end

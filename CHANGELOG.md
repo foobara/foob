@@ -1,3 +1,7 @@
+## [0.0.14] - 2025-05-03
+
+- Deal with CommandConnector interface changes
+
 ## [0.0.13] - 2025-04-11
 
 - Add mcp-connector generator and improve available generator output
