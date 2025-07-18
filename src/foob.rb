@@ -86,7 +86,7 @@ module Foobara
       end
 
       def request_to_command_inputs(request)
-        if %w[generate version].include?(request.action)
+        if ["generate", "version"].include?(request.action)
           request.inputs
         else
           super

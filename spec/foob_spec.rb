@@ -68,7 +68,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
   end
 
   context "when generator key is bad" do
-    let(:argv) { %w[g bad-key] }
+    let(:argv) { ["g", "bad-key"] }
 
     it "gives relevant error" do
       expect(response.status).to_not be(0)
@@ -78,7 +78,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
   end
 
   context "when generator key is correct but not arguments" do
-    let(:argv) { %w[generate ruby-project] }
+    let(:argv) { ["generate", "ruby-project"] }
 
     it "gives relevant error" do
       expect(response.status).to_not be(0)
@@ -89,7 +89,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
 
   context "when asking for help with a generator key" do
     let(:argv) do
-      %w[help ruby-project]
+      ["help", "ruby-project"]
     end
 
     it "gives relevant help" do
@@ -99,7 +99,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
     end
 
     context "when generator key is bad" do
-      let(:argv) { %w[help bad-key] }
+      let(:argv) { ["help", "bad-key"] }
 
       it "gives relevant error" do
         expect(response.status).to be(0)
@@ -110,7 +110,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
   end
 
   context "when asking for the version of foob" do
-    let(:argv) { %w[--version] }
+    let(:argv) { ["--version"] }
 
     it "gives version number" do
       expect(response.status).to be(0)
@@ -118,7 +118,7 @@ RSpec.describe Foobara::CommandConnectors::Foob do
     end
 
     context "with short option" do
-      let(:argv) { %w[v] }
+      let(:argv) { ["v"] }
 
       it "gives version number" do
         expect(response.status).to be(0)

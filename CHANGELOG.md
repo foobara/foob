@@ -1,6 +1,6 @@
-## [unreleased] -
+## [0.0.15] - 2025-07-17
 
-- Add ruby minimum version to gemspec/Gemfile
+- Bump gems and improve some version handling
 
 ## [0.0.14] - 2025-05-03
 
