@@ -10,7 +10,8 @@ module Foobara
                                generate_command_class = command_connector.generator_key_to_command_class(argument)
 
                                if generate_command_class
-                                 command_connector.transform_command_class(generate_command_class)
+                                 # Using send hack here to transform the class without having to register it
+                                 command_connector.send(:transform_command_class, generate_command_class)
                                else
                                  super
                                end

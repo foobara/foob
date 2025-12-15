@@ -32,12 +32,13 @@ Gem::Specification.new do |spec|
   spec.bindir = "bin"
   spec.executables = ["foob"]
 
-  spec.add_dependency "foobara", ">= 0.1.1", "< 2.0.0"
+  spec.add_dependency "foobara", ">= 0.3.0", "< 2.0.0"
   spec.add_dependency "foobara-command-generator", "< 2.0.0"
   spec.add_dependency "foobara-domain-generator", "< 2.0.0"
   spec.add_dependency "foobara-domain-mapper-generator", "< 2.0.0"
   spec.add_dependency "foobara-empty-ruby-project-generator", "< 2.0.0"
   spec.add_dependency "foobara-empty-typescript-react-project-generator", "< 2.0.0"
+  spec.add_dependency "foobara-foobify-rails-app", "< 2.0.0"
   spec.add_dependency "foobara-local-files-crud-driver-generator", "< 2.0.0"
   spec.add_dependency "foobara-mcp-connector-generator", "< 2.0.0"
   spec.add_dependency "foobara-organization-generator", "< 2.0.0"
