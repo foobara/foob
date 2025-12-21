@@ -1,3 +1,11 @@
+## [0.1.2] - 2025-12-21
+
+- Rename foobara-foobify-rails-app to foobify-rails-app
+
+## [0.1.1] - 2025-12-15
+
+- Add foobify-rails-app generator
+
 ## [0.1.0] - 2025-08-22
 
 - Mark as compatible with Foobara 0.1.0

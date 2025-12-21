@@ -38,7 +38,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "foobara-domain-mapper-generator", "< 2.0.0"
   spec.add_dependency "foobara-empty-ruby-project-generator", "< 2.0.0"
   spec.add_dependency "foobara-empty-typescript-react-project-generator", "< 2.0.0"
-  spec.add_dependency "foobara-foobify-rails-app", "< 2.0.0"
   spec.add_dependency "foobara-local-files-crud-driver-generator", "< 2.0.0"
   spec.add_dependency "foobara-mcp-connector-generator", "< 2.0.0"
   spec.add_dependency "foobara-organization-generator", "< 2.0.0"
@@ -52,6 +51,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "foobara-type-generator", "< 2.0.0"
   spec.add_dependency "foobara-typescript-react-command-form-generator", "< 2.0.0"
   spec.add_dependency "foobara-typescript-remote-command-generator", "< 2.0.0"
+  spec.add_dependency "foobify-rails-app", "< 2.0.0"
 
   spec.require_paths = ["lib"]
   spec.metadata["rubygems_mfa_required"] = "true"
