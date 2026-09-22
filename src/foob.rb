@@ -72,7 +72,7 @@ module Foobara
           transform_command_class(generate_command_class)
         when "console"
           # Not going to bother creating a command for this one
-          # :nocov:
+          # simplecov:disable
           run_console = -> { exec({ "IRB_PROMPT_PREFIX" => "foob" }, "./bin/console") }
 
           if Bundler.respond_to?(:with_unbundled_env)
@@ -80,7 +80,7 @@ module Foobara
           else
             run_console.call
           end
-          # :nocov:
+          # simplecov:enable
         else
           super
         end

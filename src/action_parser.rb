@@ -12,9 +12,9 @@ module Foobara
           when "v"
             "version"
           when "c"
-            # :nocov:
+            # simplecov:disable
             "console"
-            # :nocov:
+            # simplecov:enable
           when "g"
             "generate"
           else
