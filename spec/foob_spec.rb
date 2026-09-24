@@ -32,13 +32,15 @@ RSpec.describe Foobara::CommandConnectors::Foob do
     allow_any_instance_of(
       Foobara::Generators::EmptyRubyProjectGenerator::WriteEmptyRubyProjectToDisk
     ).to receive(:rbenv_bundler_on).and_return(nil)
+    allow_any_instance_of(
+      Foobara::Generators::EmptyRubyProjectGenerator::WriteEmptyRubyProjectToDisk
+    ).to receive(:bundle_install).and_return(nil)
 
     # rubocop:enable RSpec/AnyInstance
 
     FileUtils.rm_rf output_directory
   end
 
-  # TODO: capture bundle stuff with vcr or stub bundle if too much data
   it "can generate thing" do
     expect(response.status).to be(0)
 
