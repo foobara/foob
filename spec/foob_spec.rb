@@ -59,6 +59,26 @@ RSpec.describe Foobara::CommandConnectors::Foob do
     end
   end
 
+  context "when the action prefix matches multiple actions" do
+    let(:argv) { [""] }
+
+    it "treats it as a command name" do
+      expect(response.status).to_not be(0)
+      expect(response.request.action).to eq("run")
+      expect(response.request.argument).to eq("")
+    end
+  end
+
+  context "when the action prefix matches no actions" do
+    let(:argv) { ["not-an-action"] }
+
+    it "treats it as a command name" do
+      expect(response.status).to_not be(0)
+      expect(response.request.action).to eq("run")
+      expect(response.request.argument).to eq("not-an-action")
+    end
+  end
+
   context "when giving g but nothing else" do
     let(:argv) { ["g"] }
 

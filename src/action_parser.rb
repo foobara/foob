@@ -8,15 +8,12 @@ module Foobara
         end
 
         def normalize_action(action)
-          case action
-          when "v"
-            "version"
-          when "c"
-            # simplecov:disable
-            "console"
-            # simplecov:enable
-          when "g"
-            "generate"
+          return action if supported_actions.include?(action)
+
+          matches = supported_actions.select { |a| a.start_with?(action) }
+
+          if matches.size == 1
+            matches.first
           else
             super
           end
