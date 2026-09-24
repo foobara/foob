@@ -125,5 +125,14 @@ RSpec.describe Foobara::CommandConnectors::Foob do
         expect(response.body).to eq(Foobara::Foob::VERSION)
       end
     end
+
+    context "with short flag" do
+      let(:argv) { ["-v"] }
+
+      it "gives version number" do
+        expect(response.status).to be(0)
+        expect(response.body).to eq(Foobara::Foob::VERSION)
+      end
+    end
   end
 end

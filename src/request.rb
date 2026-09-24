@@ -7,7 +7,7 @@ module Foobara
         end
 
         def globalish_parser
-          @globalish_parser ||= GlobalishParser.new
+          @globalish_parser ||= ShCliConnector::GlobalishParser.new
         end
       end
     end
