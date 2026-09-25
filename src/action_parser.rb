@@ -3,7 +3,6 @@ module Foobara
     class Foob < ShCliConnector
       class ActionParser < ShCliConnector::ActionParser
         def supported_actions
-          # TODO: implement a shortcut feature for this stuff
           [*super, "generate", "console", "version"]
         end
 

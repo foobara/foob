@@ -11,4 +11,4 @@ require "foobara/foob"
 
 foob = Foobara::CommandConnectors::Foob.new
 
-foob.run(ARGV)
+foob.run

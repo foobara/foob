@@ -1,3 +1,8 @@
+## [0.2.0] - 2026-09-24
+
+- Supports an array of keys from .generator_key to indicate current and deprecated-but-supported keys
+- Can use prefix of any action instead of the whole action
+
 ## [0.1.2] - 2025-12-21
 
 - Rename foobara-foobify-rails-app to foobify-rails-app

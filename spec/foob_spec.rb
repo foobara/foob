@@ -148,4 +148,39 @@ RSpec.describe Foobara::CommandConnectors::Foob do
       end
     end
   end
+
+  describe "#generator_key_to_command_class" do
+    let(:foob) { described_class.new }
+    let(:generator_class) { foob.generator_key_to_command_class(generator_key) }
+
+    context "when generator has an array of keys" do
+      before do
+        stub_class(:GeneratorWithArrayOfKeys, Foobara::Generators::WriteGeneratedFilesToDisk) do
+          class << self
+            def generator_key
+              ["not_deprecated", "deprecated"]
+            end
+          end
+        end
+      end
+
+      context "when using the first key" do
+        let(:generator_key) { "not_deprecated" }
+
+        it "is not deprecated" do
+          expect(generator_class).to be(GeneratorWithArrayOfKeys)
+        end
+      end
+
+      context "when not using the first key" do
+        before { allow(foob).to receive(:warn) }
+
+        let(:generator_key) { "deprecated" }
+
+        it "is not deprecated" do
+          expect(generator_class).to be(GeneratorWithArrayOfKeys)
+        end
+      end
+    end
+  end
 end

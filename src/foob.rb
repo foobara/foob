@@ -22,20 +22,19 @@ require "foobara/typescript_react_command_form_generator"
 module Foobara
   module CommandConnectors
     class Foob < ShCliConnector
-      def generator_key_to_command_class(generator_key)
-        generator_keys_to_command_class[generator_key]
-      end
+      def generator_key_to_command_class(key)
+        all_known_generator_classes.find do |generator_class|
+          generator_key_or_keys = generator_class.generator_key
 
-      def generator_keys_to_command_class
-        @generator_keys_to_command_class ||= begin
-          h = {}
-          Util.descendants(Generators::WriteGeneratedFilesToDisk).each do |c|
-            if c.generator_key
-              h[c.generator_key] = c
+          if generator_key_or_keys.is_a?(::Array)
+            generator_key_or_keys.index(key).tap do |index|
+              if index && index > 0
+                warn "DEPRECATED: #{key} is deprecated. Use #{generator_key_or_keys.first} instead."
+              end
             end
+          else
+            key == generator_key_or_keys
           end
-
-          h
         end
       end
 
@@ -49,7 +48,7 @@ module Foobara
           generator_key = request.argument
 
           if generator_key.nil?
-            generator_keys = generator_keys_to_command_class.keys.sort.map { |s| "  #{s}" }
+            generator_keys = all_known_generator_keys.map { |s| "  #{s}" }
             generator_keys = generator_keys.join("\n")
 
             request.error = ParseError.new(
@@ -64,7 +63,7 @@ module Foobara
           if generate_command_class.nil?
             request.error = ParseError.new(
               message: "Generator not found: #{generator_key}\n\n" \
-                       "Available Generators: #{generator_keys_to_command_class.keys.sort.join(", ")}"
+                       "Available Generators: #{all_known_generator_keys.join(", ")}"
             )
             return
           end
@@ -92,6 +91,20 @@ module Foobara
         else
           super
         end
+      end
+
+      private
+
+      def all_known_generator_classes
+        @all_known_generator_classes ||= Util.descendants(Generators::WriteGeneratedFilesToDisk)
+      end
+
+      def all_known_generator_keys
+        @all_known_generator_keys ||= all_known_generator_classes.map do |klass|
+          generator_key_or_keys = klass.generator_key
+
+          generator_key_or_keys.is_a?(::Array) ? generator_key_or_keys.first : generator_key_or_keys
+        end.sort
       end
     end
   end

@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.bindir = "bin"
   spec.executables = ["foob"]
 
-  spec.add_dependency "foobara", ">= 0.3.0", "< 2.0.0"
+  spec.add_dependency "foobara", ">= 0.6.4", "< 2.0.0"
   spec.add_dependency "foobara-command-generator", "< 2.0.0"
   spec.add_dependency "foobara-domain-generator", "< 2.0.0"
   spec.add_dependency "foobara-domain-mapper-generator", "< 2.0.0"
