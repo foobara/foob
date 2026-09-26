@@ -1,51 +1,73 @@
-# Foobara::EmptyRubyProjectGenerator
+# foob
 
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library
-into a gem. Put your Ruby code in the file `lib/foobara/empty_ruby_project_generator`. To experiment with that code,
-run `bin/console` for an interactive prompt.
+`foob` is a CLI interface for running code generators for Foobara projects. 
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it
-to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with
-instructions to install your gem from git if you don't plan to release to RubyGems.org.
+Install `foob` as a standalone gem in the terminal:
+    `$ gem install foob`
 
-Install the gem and add to the application's Gemfile by executing:
-
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
-
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+OR add it to your existing application's Gemfile
+    `$ bundle add foob`
 
 ## Usage
 
-TODO: Write usage instructions here
+`foob` is invoked by running a command of the following nature in your terminal:
 
-## Development
+`foob [GLOBAL_OPTIONS] [ACTION] [COMMAND] [COMMAND_INPUTS]`
 
-If using Foobara locally, then run the following (TODO: make this no-longer necessary.)
+For an exhaustive list of available actions, run `foob --help` in your terminal. Each action performs a specific function as described below:
+- `generate [GENERATOR_COMMAND] [OPTIONS]`: Runs a generator that writes files to disk
+- `version` or `-v` OR `--version`: Prints out the version of `foob` installed on your machine
+- `help [ACTION_OR_COMMAND]`: Prints help for a given action or generator command. For example, `foob help ruby-project` lists the inputs of the `ruby-project` command. 
+- `manifest`: Returns the Foobara system manifest.
+- `console`: Opens an interactive console. NOTE: This only works when run from inside a Foobara project directory that has a `./bin/console` script. 
+- `run` and `describe`: Foobara base actions that require a registered command to operate on. Since `foob` doesn't register any user commands by default, running them returns an error message rather than useful output. For example running `foob describe` returns `Missing command or type to describe` as output. 
+- `ping` and `query_git_commit_info`: These actions are listed on running `foob --help` but require a connected Foobara app to function. Running them in a standalone context in the terminal returns `Could not find command registered for ping/query_git_commit_info` as the output.
 
-```bash
-bundle config set local.foobara ../foobara
-bundle config set disable_local_branch_check true
-```
+### The `generate` action
+`generate` is the primary action of the `foob` gem. It allows you to run various generator commands which write specific files to disk.
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can
-also run `bin/console` for an interactive prompt that will allow you to experiment.
+The `generate` action has 18 generator commands, each with specific inputs depending on the type of project you are trying to generate. To see what inputs are available for a given command, run `foob help [COMMAND]`. For example, to see the inputs available for the `ruby-project` command, run `foob help ruby-project`. 
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the
-version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version,
-push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+The table below lists the 18 commands associated with the `generate` action. 
+
+| Command | What it generates |
+| --- | --- |
+| `command` | Foobara command code |
+| `domain` | A Foobara domain |
+| `domain-mapper` | A domain mapper |
+| `foobify-rails-app` | Foobara integration files for a Rails app |
+| `local-files-crud-driver` | A local-files CRUD driver |
+| `mcp-connector` | An MCP connector |
+| `organization` | A Foobara organization |
+| `rack-connector` | A Rack connector |
+| `redis-crud-driver` | A Redis CRUD driver |
+| `remote-imports` | Remote-import configuration or files |
+| `resque-connector` | A Resque connector |
+| `resque-scheduler-connector` | A Resque Scheduler connector |
+| `ruby-project` | A Ruby project scaffold |
+| `sh-cli-connector` | A shell CLI connector |
+| `type` | Foobara type code |
+| `typescript-react-command-form` | A React command form |
+| `typescript-react-project` | A TypeScript React project scaffold |
+| `typescript-remote-commands` | TypeScript code for remote commands |
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub
-at https://github.com/[USERNAME]/foobara-empty_ruby_project_generator.
+Contributions in the form of  PRs and issues are always welcome. 
+
+Before you get started, ensure you have Ruby installed(via RVM or a similar version manager).
+
+To work on an existing issue or submit a PR:
+1. Fork the `foob` repository and clone it to your local machine. 
+2. Run `bundle install` to install any dependencies
+3. Run `rake` to ensure that everything works as expected before making any changes. 
+4. Implement your changes adding tests where applicable
+5. Re-run `rake` to ensure that all tests and RuboCop still pass. 
+6. Commit, push to GitHub and open a PR to review
 
 ## License
 
 foob is licensed under your choice of the Apache License 2.0 or the MIT license.
-See [LICENSE.txt](LICENSE-MIT.txt) for more info about licensing.
+See [LICENSE-MIT.txt](LICENSE-MIT.txt) for more info about licensing.
