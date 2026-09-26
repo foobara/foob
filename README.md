@@ -5,9 +5,11 @@
 ## Installation
 
 Install `foob` as a standalone gem in the terminal:
+
     `$ gem install foob`
 
-OR add it to your existing application's Gemfile
+OR add it to your existing application's Gemfile:
+
     `$ bundle add foob`
 
 ## Usage
