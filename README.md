@@ -14,27 +14,33 @@ OR add it to your existing application's Gemfile:
 
 ## Usage
 
-`foob` is invoked by running a command of the following nature in your terminal:
+`foob` is invoked in your terminal with the following general syntax:
 
-`foob [GLOBAL_OPTIONS] [ACTION] [COMMAND] [COMMAND_INPUTS]`
+`foob [GLOBAL_OPTIONS] [ACTION] [ACTION_ARGUMENTS]`
+
+The main generator workflow is:
+
+- `foob generate`: Prints the available generators in its usage output.
+- `foob help [GENERATOR]`: Shows the inputs for a generator. For example, `foob help ruby-project` shows the inputs for the `ruby-project` generator.
+- `foob generate [GENERATOR] [GENERATOR_INPUTS]`: Runs the selected generator.
 
 For an exhaustive list of available actions, run `foob --help` in your terminal. Each action performs a specific function as described below:
-- `generate [GENERATOR_COMMAND] [OPTIONS]`: Runs a generator that writes files to disk
+- `generate [GENERATOR] [GENERATOR_INPUTS]`: Runs a generator that writes files to disk. With no generator name, it prints usage and the available generator list.
 - `version` or `-v` OR `--version`: Prints out the version of `foob` installed on your machine
-- `help [ACTION_OR_COMMAND]`: Prints help for a given action or generator command. For example, `foob help ruby-project` lists the inputs of the `ruby-project` command. 
+- `help [TARGET]`: Prints help for an action, registered command or type, or generator.
 - `manifest`: Returns the Foobara system manifest.
 - `console`: Opens an interactive console. NOTE: This only works when run from inside a Foobara project directory that has a `./bin/console` script. 
-- `run` and `describe`: Foobara base actions that require a registered command to operate on. Since `foob` doesn't register any user commands by default, running them returns an error message rather than useful output. For example running `foob describe` returns `Missing command or type to describe` as output. 
+- `run [COMMAND]` and `describe [COMMAND_OR_TYPE]`: Foobara actions for running a registered command or describing a registered command or type. The standalone `foob` CLI does not register application commands or types by default.
 - `ping` and `query_git_commit_info`: These actions are listed on running `foob --help` but require a connected Foobara app to function. Running them in a standalone context in the terminal returns `Could not find command registered for ping/query_git_commit_info` as the output.
 
 ### The `generate` action
-`generate` is the primary action of the `foob` gem. It allows you to run various generator commands which write specific files to disk.
+`generate` is the primary action of the `foob` gem. It allows you to run generators that write specific files to disk.
 
-The `generate` action has 18 generator commands, each with specific inputs depending on the type of project you are trying to generate. To see what inputs are available for a given command, run `foob help [COMMAND]`. For example, to see the inputs available for the `ruby-project` command, run `foob help ruby-project`. 
+The `generate` action has 18 generators, each with specific inputs depending on what you are generating. To see the inputs available for a generator, run `foob help [GENERATOR]`. For example, run `foob help ruby-project` to see the inputs for the `ruby-project` generator. 
 
-The table below lists the 18 commands associated with the `generate` action. 
+The table below lists the 18 generators associated with the `generate` action. 
 
-| Command | What it generates |
+| Generator | What it generates |
 | --- | --- |
 | `command` | Foobara command code |
 | `domain` | A Foobara domain |
@@ -72,4 +78,4 @@ To work on an existing issue or submit a PR:
 ## License
 
 foob is licensed under your choice of the Apache License 2.0 or the MIT license.
-See [LICENSE-MIT.txt](LICENSE-MIT.txt) for more info about licensing.
+See [LICENSE.txt](LICENSE.txt) for more info about licensing.
