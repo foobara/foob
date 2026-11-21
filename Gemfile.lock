@@ -27,13 +27,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.3)
-    bigdecimal (4.1.3)
     byebug (13.0.0)
       reline (>= 0.6.0)
     coderay (1.1.3)
     diff-lcs (1.6.2)
     erb (6.0.7)
-    extract-repo (1.0.0)
+    extract-repo (1.0.2)
       foobara (< 2.0.0)
       foobara-sh-cli-connector (< 2.0.0)
     ffi (1.17.4)
@@ -47,8 +46,7 @@ GEM
     ffi (1.17.4-x86_64-darwin)
     ffi (1.17.4-x86_64-linux-gnu)
     ffi (1.17.4-x86_64-linux-musl)
-    foobara (0.6.4)
-      bigdecimal
+    foobara (0.8.0)
       foobara-lru-cache (< 2.0.0)
       foobara-util (< 2.0.0)
       inheritable-thread-vars (< 2.0.0)
@@ -61,14 +59,14 @@ GEM
     foobara-domain-mapper-generator (0.0.4)
       foobara
       foobara-files-generator
-    foobara-empty-ruby-project-generator (1.0.5)
+    foobara-empty-ruby-project-generator (1.1.1)
       extract-repo (< 2.0.0)
-      foobara (>= 0.1.1, < 2.0.0)
-      foobara-files-generator (< 2.0.0)
+      foobara (>= 0.7.3, < 2.0.0)
+      foobara-files-generator (>= 0.2.4, < 2.0.0)
     foobara-empty-typescript-react-project-generator (0.3.0)
       foobara (>= 0.1.1, < 2.0.0)
       foobara-files-generator (< 2.0.0)
-    foobara-files-generator (0.1.5)
+    foobara-files-generator (0.2.5)
       foobara (>= 0.1.1, < 2.0.0)
     foobara-local-files-crud-driver-generator (0.0.3)
       foobara
@@ -100,7 +98,7 @@ GEM
     foobara-sh-cli-connector (1.1.4)
       foobara (>= 0.1.1, < 2.0.0)
       foobara-files-generator (< 2.0.0)
-    foobara-sh-cli-connector-generator (0.1.0)
+    foobara-sh-cli-connector-generator (0.2.0)
       foobara (>= 0.1.1)
       foobara-files-generator (< 2.0.0)
     foobara-spec-helpers (0.1.1)
@@ -111,17 +109,17 @@ GEM
     foobara-typescript-react-command-form-generator (1.3.0)
       foobara (>= 0.1.1, < 2.0.0)
       foobara-typescript-remote-command-generator (< 2.0.0)
-    foobara-typescript-remote-command-generator (1.5.1)
+    foobara-typescript-remote-command-generator (1.5.2)
       foobara (>= 0.1.16, < 2.0.0)
-      foobara-files-generator (< 2.0.0)
-    foobara-util (1.1.0)
+      foobara-files-generator (>= 0.2.3, < 2.0.0)
+    foobara-util (1.1.1)
     foobify-rails-app (0.0.13)
       foobara (>= 0.3.0, < 2.0.0)
       foobara-files-generator (< 2.0.0)
       foobara-sh-cli-connector (< 2.0.0)
     formatador (1.2.3)
       reline
-    guard (2.20.2)
+    guard (2.21.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
       logger (~> 1.6)
@@ -137,16 +135,16 @@ GEM
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
     inheritable-thread-vars (0.0.3)
-    io-console (0.9.4)
-    irb (1.18.0)
+    io-console (0.9.5)
+    irb (1.19.0)
       pp (>= 0.6.0)
       prism (>= 1.3.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    json (3.0.2)
+    json (3.1.0)
     language_server-protocol (3.17.0.6)
     lint_roller (1.1.0)
-    listen (3.10.0)
+    listen (3.10.1)
       logger
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -157,15 +155,23 @@ GEM
     notiffany (0.1.3)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    parallel (2.2.0)
-    parser (3.3.12.0)
+    parallel (2.3.0)
+    parser (3.3.14.0)
       ast (~> 2.4.1)
       racc
     pp (0.6.4)
       prettyprint
-    prettyprint (0.2.0)
-    prism (1.9.0)
-    pry (0.16.0)
+    prettyprint (0.2.1)
+    prism (2.1.0)
+    prism (2.1.0-aarch64-linux-gnu)
+    prism (2.1.0-aarch64-linux-musl)
+    prism (2.1.0-arm-linux-gnu)
+    prism (2.1.0-arm-linux-musl)
+    prism (2.1.0-arm64-darwin)
+    prism (2.1.0-x86_64-darwin)
+    prism (2.1.0-x86_64-linux-gnu)
+    prism (2.1.0-x86_64-linux-musl)
+    pry (0.16.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
       reline (>= 0.6.0)
@@ -182,44 +188,46 @@ GEM
       logger
       prism (>= 1.6.0)
       tsort
-    rdoc (8.0.0)
+    rdoc (8.1.0)
       erb
       prism (>= 1.6.0)
       rbs (>= 4.0.0)
       tsort
-    regexp_parser (2.13.0)
+    regexp_parser (2.13.4)
     reline (0.7.0)
       io-console (~> 0.5)
     rspec (3.13.2)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
       rspec-mocks (~> 3.13.0)
-    rspec-core (3.13.6)
+    rspec-core (3.13.7)
       rspec-support (~> 3.13.0)
-    rspec-expectations (3.13.5)
+    rspec-expectations (3.13.6)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-its (2.0.0)
       rspec-core (>= 3.13.0)
       rspec-expectations (>= 3.13.0)
-    rspec-mocks (3.13.8)
+    rspec-mocks (3.13.9)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
-    rspec-support (3.13.7)
-    rubocop (1.91.0)
+    rspec-support (3.13.8)
+    rubocop (1.92.3)
       json (>= 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
       parallel (>= 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 2.9.3, < 3.0)
+      regexp_parser (>= 2.11.3, < 3.0)
       rubocop-ast (>= 1.49.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.50.0)
+    rubocop-ast (1.53.0)
+      ast (~> 2.4)
       parser (>= 3.3.7.2)
-      prism (~> 1.7)
+      prism (>= 1.7)
+      racc
     rubocop-rake (0.7.1)
       lint_roller (~> 1.1)
       rubocop (>= 1.72.1)
@@ -229,7 +237,7 @@ GEM
       rubocop (~> 1.86, >= 1.86.2)
     ruby-progressbar (1.13.0)
     shellany (0.0.1)
-    simplecov (1.3.1)
+    simplecov (1.3.2)
     thor (1.5.0)
     tsort (0.2.0)
     unicode-display_width (3.3.0)
@@ -266,13 +274,11 @@ DEPENDENCIES
 
 CHECKSUMS
   ast (2.4.3) sha256=954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383
-  bigdecimal (4.1.3) sha256=61ebe1e5e559bdc3cc6f2c0ee7f427321fc838f59611c294356eb04d6e21cf66
-  bundler (4.0.21) sha256=7cbf5499b426076aa16c8d28a59e4c2c3aad5a438402abcd961f0119f29f1dd0
   byebug (13.0.0) sha256=d2263efe751941ca520fa29744b71972d39cbc41839496706f5d9b22e92ae05d
   coderay (1.1.3) sha256=dc530018a4684512f8f38143cd2a096c9f02a1fc2459edcfe534787a7fc77d4b
   diff-lcs (1.6.2) sha256=9ae0d2cba7d4df3075fe8cd8602a8604993efc0dfa934cff568969efb1909962
   erb (6.0.7) sha256=c5ca6dc25b0ef974a44dc8f59fe847577122483b1968a38dec305c60bf91ee92
-  extract-repo (1.0.0) sha256=db2aebdf6bcc9591265f4405e026801277ffb0a338e94704dde2e44f8abf0e80
+  extract-repo (1.0.2) sha256=32c281e399eb5d854fee82cdb9f00a3317459e49ab54f53ec04a850b9350dfc0
   ffi (1.17.4) sha256=bcd1642e06f0d16fc9e09ac6d49c3a7298b9789bcb58127302f934e437d60acf
   ffi (1.17.4-aarch64-linux-gnu) sha256=b208f06f91ffd8f5e1193da3cae3d2ccfc27fc36fba577baf698d26d91c080df
   ffi (1.17.4-aarch64-linux-musl) sha256=9286b7a615f2676245283aef0a0a3b475ae3aae2bb5448baace630bb77b91f39
@@ -285,13 +291,13 @@ CHECKSUMS
   ffi (1.17.4-x86_64-linux-gnu) sha256=9d3db14c2eae074b382fa9c083fe95aec6e0a1451da249eab096c34002bc752d
   ffi (1.17.4-x86_64-linux-musl) sha256=3fdf9888483de005f8ef8d1cf2d3b20d86626af206cbf780f6a6a12439a9c49e
   foob (0.2.0)
-  foobara (0.6.4) sha256=52446b9e83ad0ec26b49066579936755bd30335a9308e0e16388624ebe9fd810
+  foobara (0.8.0) sha256=f78fb18c17421a616f9c794f302ffba7bf35f867845ca8af48fe7eb0984d443a
   foobara-command-generator (0.1.0) sha256=845b5f728cc92a35d2ced0046e232644a1d4c5e43846d902be3585b6de2051af
   foobara-domain-generator (0.0.3) sha256=d6071e56d937103ff4171cc9746412da4ccf7870a3c0397d1c7b19b6ee2990ab
   foobara-domain-mapper-generator (0.0.4) sha256=74da1948484c3688ab2c7eade6653e9b41de4d495dc74e4a0986577a6b1e60e3
-  foobara-empty-ruby-project-generator (1.0.5) sha256=a9164a1e1b198dac9a13d61551fd1c8385b2c583dea5b412722ce0e393792d75
+  foobara-empty-ruby-project-generator (1.1.1) sha256=fae5a75a705ce9fca55c490178fdf87d6806110681286b1bb07ed9a387e714b1
   foobara-empty-typescript-react-project-generator (0.3.0) sha256=86857b153f4cb8a018ff7e4f6505493bb3acc4e8be51a697c2fca2d577011e3c
-  foobara-files-generator (0.1.5) sha256=cbe7f42483cf1fc0bf2015927b04a85c9608e07967aa278c2c8229ee8498615b
+  foobara-files-generator (0.2.5) sha256=d7ae211b1936ad1f8bf742cfeb56fffaf0afd03e42a7e0a8081bb8aa53b14e26
   foobara-local-files-crud-driver-generator (0.0.3) sha256=c9a6c7472c21eeefeb5ea950c89f8f3490dc1a10e6ed2ca89c0854b00bed6810
   foobara-lru-cache (1.0.0) sha256=ff9716e011a4642382dc0e1fd7a80751134b1fbf97d180fd333472a5d20f2029
   foobara-mcp-connector-generator (0.1.0) sha256=a4e82267b28737a18221d05df139bfcc48f493f9484f8d53cd657399d2903637
@@ -303,35 +309,43 @@ CHECKSUMS
   foobara-resque-scheduler-connector-generator (0.0.2) sha256=a7c6251f3c5d618374d296a8ef499dec4a4485cc43337c52c08a515a56d8925c
   foobara-rubocop-rules (1.1.1) sha256=af7000f0c1dbf9a97dde78207c04a2a2b1b11726e616fe88ad223302e47b7b8f
   foobara-sh-cli-connector (1.1.4) sha256=ecd668b9a9b546e40133afc919f8a56fa2e5ac9a2905c6fd11dbba53bed824d3
-  foobara-sh-cli-connector-generator (0.1.0) sha256=b1d77408c6e6c56492a15a2eeb545ca096182222219d1581b49c136bf146c148
+  foobara-sh-cli-connector-generator (0.2.0) sha256=2fce97c0a7bf72d9b9ec8d5226ace7b6f253e3492cc22e5c12517fdcf1c8ceb7
   foobara-spec-helpers (0.1.1) sha256=3698009a860fef2f6c8ad24c9d54d87c0fcddcaf99ba60bf53998ee76a410cab
   foobara-type-generator (0.0.4) sha256=51d08bbc50dfcde935d45a3cceb035dc0bae71e761c8aba03288573d5f7bc811
   foobara-typescript-react-command-form-generator (1.3.0) sha256=325a844a73de50326822d99e00e9dbc3fae4f9a89b37bc3f7a484f639b0fb0d0
-  foobara-typescript-remote-command-generator (1.5.1) sha256=39e3853c9cb577e7cb31b4e0cb33fb7c1e1dee937e771de5d06780ea94f73aff
-  foobara-util (1.1.0) sha256=f3a45a500a4eeb73e0ae5baf06e3a2fe0c047ffeb6084f3e2d47179ef1b5d806
+  foobara-typescript-remote-command-generator (1.5.2) sha256=10ba3b5ce13175dcb025b95f1450c637ed467586e74da7612626e147b829024f
+  foobara-util (1.1.1) sha256=d4f37678a817a6486c032e975997eeda56399e9b47d7ea175bdb798e8a873400
   foobify-rails-app (0.0.13) sha256=62c42768633d41867a675fde4dc214305f5815ed18b752679f3e16754cb7765b
   formatador (1.2.3) sha256=19fa898133c2c26cdbb5d09f6998c1e137ad9427a046663e55adfe18b950d894
-  guard (2.20.2) sha256=2d0574d35619669f2f71739a0313290810b9cf66b2263f5d97e815fcce598d4d
+  guard (2.21.0) sha256=60d815d294753d16a07fd70e57eb21f884a4aada51ddde05dbce9c2b71d246cd
   guard-compat (1.2.1) sha256=3ad21ab0070107f92edfd82610b5cdc2fb8e368851e72362ada9703443d646fe
   guard-rspec (4.7.3) sha256=a47ba03cbd1e3c71e6ae8645cea97e203098a248aede507461a43e906e2f75ca
   inheritable-thread-vars (0.0.3) sha256=2fe4296a625a0abd8174e39003a0a5a6635def31ddfe2c229921a219ba9e0724
-  io-console (0.9.4) sha256=a403304f32928ee85e56d457b4612ca43f2703b561a3258844992bd24085fbb1
-  irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
-  json (3.0.2) sha256=8e6d7e7b11384c21230430cef90b71f14849a34a1f4452796670f7c981bd19df
+  io-console (0.9.5) sha256=83dd9bbf4c4680416629245b39cd4212eb5f4d9a4ea91804870c1f6b846414d5
+  irb (1.19.0) sha256=55ee56acbdd6c9fe06a2e6909f46a24e5c41f45f16906bab04e8049cf46f1d27
+  json (3.1.0) sha256=3ce7ccf8fde58960177a3a756c31f292a4c1e1dedee884547096a5b0604e3bd8
   language_server-protocol (3.17.0.6) sha256=5ef2c0c138f8267e1bc631d3328347d354f96724b0af22f2c79516120443b7f0
   lint_roller (1.1.0) sha256=2c0c845b632a7d172cb849cc90c1bce937a28c5c8ccccb50dfd46a485003cc87
-  listen (3.10.0) sha256=c6e182db62143aeccc2e1960033bebe7445309c7272061979bb098d03760c9d2
+  listen (3.10.1) sha256=4c3f32855657f348747da4dd2372ff3790d90a6b1d3e4f21a3706adb2d04783c
   logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
   lumberjack (1.4.2) sha256=40de5ae46321380c835031bcc1370f13bba304d29f2b5f5bb152061a5a191b95
   method_source (1.1.0) sha256=181301c9c45b731b4769bc81e8860e72f9161ad7d66dd99103c9ab84f560f5c5
   nenv (0.3.0) sha256=d9de6d8fb7072228463bf61843159419c969edb34b3cef51832b516ae7972765
   notiffany (0.1.3) sha256=d37669605b7f8dcb04e004e6373e2a780b98c776f8eb503ac9578557d7808738
-  parallel (2.2.0) sha256=e1059c5fd7b649558a0aec38a769f06a42942bdb40503d005a59c352fe011cd8
-  parser (3.3.12.0) sha256=21a6d7f755d5a24dfbdc6e6b772e4e879a52e7631a88bc5a3a134606052c9828
+  parallel (2.3.0) sha256=f75a3e904101ce6a1ccb6b8dc800cbafd42166d83330192438dcf29395167a6f
+  parser (3.3.14.0) sha256=62f8f76af7b919425ee2d811880e9dcb8011ab40bfd59970dfb583141697e58f
   pp (0.6.4) sha256=dfcb0fce700c41456265922884f9fe195d7fbb0674a3578e6c0f69588e82b570
-  prettyprint (0.2.0) sha256=2bc9e15581a94742064a3cc8b0fb9d45aae3d03a1baa6ef80922627a0766f193
-  prism (1.9.0) sha256=7b530c6a9f92c24300014919c9dcbc055bf4cdf51ec30aed099b06cd6674ef85
-  pry (0.16.0) sha256=d76c69065698ed1f85e717bd33d7942c38a50868f6b0673c636192b3d1b6054e
+  prettyprint (0.2.1) sha256=d555d57ea6d7cf001d4774b693546a6bd88bec1e778ddffb5c60b68ceec4b7d4
+  prism (2.1.0) sha256=1c0a7c6dea0e93183390fb123f007564dbe663198e2f86ad87204151147601f3
+  prism (2.1.0-aarch64-linux-gnu) sha256=808dddc72def68e1a0463689414c97e0ba211938eddbab05387a4844aa2b3ec2
+  prism (2.1.0-aarch64-linux-musl) sha256=dd1a0732620c1e575dabb07a297a62911fabd72f8e20ce850b522a866f877930
+  prism (2.1.0-arm-linux-gnu) sha256=96b2426b9dbab05448c4add735619929042be3cd7e871ff186468121b62bcfa8
+  prism (2.1.0-arm-linux-musl) sha256=00ef918e42a3dc98f11a461bf473586a3424b0f78bee8a4e43b5a65a5f5e2cd0
+  prism (2.1.0-arm64-darwin) sha256=2d0c2e3e011cfd89c041940907d3ff3def379d7b0f2ba158d1d42238e8ad8afc
+  prism (2.1.0-x86_64-darwin) sha256=6c645d8e6afc742956c7518220ce5106367727c4d9980ac9ab386d55004ddab4
+  prism (2.1.0-x86_64-linux-gnu) sha256=b2b647afce09551e650b8bb3e2fc91d7d73d392a09534ca307ec0d619c33bfd4
+  prism (2.1.0-x86_64-linux-musl) sha256=249f45981726923e259b927902246219fa25ad10a76f43849c9aee1a3d3ec5b8
+  pry (0.16.1) sha256=d92d82c86e7f2dc34beec6d2892d5cf5ea517eea22eed3ceabb38ee62a98accc
   pry-byebug (3.12.0) sha256=594e094ae8a8390a7ad4c7b36ae36e13304ed02664c67417d108dc5f7213d1b7
   racc (1.8.1) sha256=4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f
   rainbow (3.1.1) sha256=039491aa3a89f42efa1d6dec2fc4e62ede96eb6acd95e52f1ad581182b79bc6a
@@ -339,29 +353,29 @@ CHECKSUMS
   rb-fsevent (0.11.2) sha256=43900b972e7301d6570f64b850a5aa67833ee7d87b458ee92805d56b7318aefe
   rb-inotify (0.11.1) sha256=a0a700441239b0ff18eb65e3866236cd78613d6b9f78fea1f9ac47a85e47be6e
   rbs (4.2.0) sha256=51f7b886dcc05bc09e10b901daa6a81829f6adc03101d6ca9ea4aac6103e0674
-  rdoc (8.0.0) sha256=03bf8c08a9639658855a0cfd77c0abca8325c227693f7f33f82957811348c469
-  regexp_parser (2.13.0) sha256=d105d95d2138954e73914d2fbfb3d0a8f8605a49a3e89864c32e78b9107cb770
+  rdoc (8.1.0) sha256=befc37880a5cfd36dcb176c748b5fd5ee39dd3536a75e81824e4972ce230f60a
+  regexp_parser (2.13.4) sha256=1d0547814f57e6f00946957bd0ca201bc42f42cfb08eee89df60998aedcd8a3b
   reline (0.7.0) sha256=5b012d8e55dbf9d450f12bde2cf7d15ff546ae80b3f8f3b30e570d431815583d
   rspec (3.13.2) sha256=206284a08ad798e61f86d7ca3e376718d52c0bc944626b2349266f239f820587
-  rspec-core (3.13.6) sha256=a8823c6411667b60a8bca135364351dda34cd55e44ff94c4be4633b37d828b2d
-  rspec-expectations (3.13.5) sha256=33a4d3a1d95060aea4c94e9f237030a8f9eae5615e9bd85718fe3a09e4b58836
+  rspec-core (3.13.7) sha256=c64ff16d9788119805cbc6a3f4b6d87cc22417c2d25976a3330de136896b5469
+  rspec-expectations (3.13.6) sha256=bf538ca6d367ff5b0d85a87fdb5c0c6038f2cd1308a0eeba07476caa02d22f35
   rspec-its (2.0.0) sha256=a88e8bc38149f2835e93533591ec4f5c829aacbfd41269a2e6f9f5b82f5260df
-  rspec-mocks (3.13.8) sha256=086ad3d3d17533f4237643de0b5c42f04b66348c28bf6b9c2d3f4a3b01af1d47
-  rspec-support (3.13.7) sha256=0640e5570872aafefd79867901deeeeb40b0c9875a36b983d85f54fb7381c47c
-  rubocop (1.91.0) sha256=9c82b7bf391c5d7e3798c5b9996e22a1fe3bd7468e351dfdeb96140c058296d0
-  rubocop-ast (1.50.0) sha256=b9ca88300da0803ee222ad20cdb30494c0a784eed06fdc35d254b06d662788db
+  rspec-mocks (3.13.9) sha256=ea5c7ff3054a6098ca6039aacef80aec69d5a8a3ef80be8fc88337359b672a30
+  rspec-support (3.13.8) sha256=e4160030309b7e3e9d9863dfe720a35dfcc577162f5402cd68fc8c5258a0ffd6
+  rubocop (1.92.3) sha256=fd77feac46e8e91c3a534f868a1702c59f5bf8173515fd00a3c6ce1198672ff6
+  rubocop-ast (1.53.0) sha256=027984d28485d6502ae4c72f9341080f54f538599f5dbb54f81875a4ddcad574
   rubocop-rake (0.7.1) sha256=3797f2b6810c3e9df7376c26d5f44f3475eda59eb1adc38e6f62ecf027cbae4d
   rubocop-rspec (3.10.2) sha256=0b3e2ecc592cd10ecbf0095bb58d1e357905276e069643523cc19eb7495f65e2
   ruby-progressbar (1.13.0) sha256=80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33
   shellany (0.0.1) sha256=0e127a9132698766d7e752e82cdac8250b6adbd09e6c0a7fbbb6f61964fedee7
-  simplecov (1.3.1) sha256=b326d38e819053499aa2ebe35d544d8bd780eba143a50f48a624b450ad87feec
+  simplecov (1.3.2) sha256=2a22ec1759f1b8db60881a2e038758956fc69ef93ed669be0bde0678de6d0e85
   thor (1.5.0) sha256=e3a9e55fe857e44859ce104a84675ab6e8cd59c650a49106a05f55f136425e73
   tsort (0.2.0) sha256=9650a793f6859a43b6641671278f79cfead60ac714148aabe4e3f0060480089f
   unicode-display_width (3.3.0) sha256=4b7aa66a4b11db50f6f7e98411215cd0dd10eaecb665d36eec5bcacb3fa0b613
   unicode-emoji (4.3.0) sha256=11c02fa73290378c066bb0562cd4c87d8e1b706fbbe0059ca12746a4244de8ce
 
 RUBY VERSION
-  ruby 4.0.7
+  ruby 4.0.9
 
 BUNDLED WITH
-  4.0.21
+  4.0.24
